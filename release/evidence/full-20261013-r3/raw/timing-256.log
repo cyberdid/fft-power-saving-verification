@@ -1,0 +1,7 @@
+/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/allength/rounds.py:107: RuntimeWarning: overflow encountered in scalar multiply
+  s[dst] = s[dst] + c * s[src]  # shear (src != dst)
+/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/allength/rounds.py:107: RuntimeWarning: invalid value encountered in scalar multiply
+  s[dst] = s[dst] + c * s[src]  # shear (src != dst)
+/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/allength/rounds.py:107: RuntimeWarning: invalid value encountered in scalar add
+  s[dst] = s[dst] + c * s[src]  # shear (src != dst)
+r=256 gates=5051520 build=3.53s apply=0.71s peak_rss=0.50GB numpy_fft=1.7us numpy_dense_toeplitz=22.0us

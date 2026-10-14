@@ -1,0 +1,1 @@
+cslots r=128 dps=350 random(3): shear blocks per vector=3712768 (each 4 monomial + 3 C slots) max rel err=4.99e-271 digits lost=79.7 conj-DAG: same structure=True, max rel |mubar_DAG - conj(mu)|=1.67e-325 build=25s total=918s

@@ -1,0 +1,20 @@
+256 adaptive seed2 2 518948 779392 5051264 256 5051520 b38894522c4e7c61 7
+Traceback (most recent call last):
+  File "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/strict_tables.py", line 155, in <module>
+    row = run(r, rule, inp)
+          ^^^^^^^^^^^^^^^^^
+  File "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/strict_tables.py", line 125, in run
+    stream_word(make_h(r, inp), r, rule, sink)
+  File "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/strict_tables.py", line 116, in stream_word
+    rec(0, r)
+  File "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/strict_tables.py", line 100, in rec
+    rec(lo, lo + p)
+  File "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/strict_tables.py", line 100, in rec
+    rec(lo, lo + p)
+  File "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/strict_tables.py", line 100, in rec
+    rec(lo, lo + p)
+  [Previous line repeated 2 more times]
+  File "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/strict_tables.py", line 110, in rec
+    assert len(borrowed) >= dag.g, "pair does not fit its block"
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: pair does not fit its block

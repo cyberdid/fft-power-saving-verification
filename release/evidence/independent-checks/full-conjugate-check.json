@@ -1,0 +1,80 @@
+{
+  "metric": "max abs(mubar_DAG-conj(mu))/max(1,abs(mu))",
+  "rows": [
+    {
+      "r": 7,
+      "dps": 60,
+      "same_structure": true,
+      "normalized_coefficient_deviation": "0.0"
+    },
+    {
+      "r": 9,
+      "dps": 60,
+      "same_structure": true,
+      "normalized_coefficient_deviation": "0.0"
+    },
+    {
+      "r": 15,
+      "dps": 60,
+      "same_structure": true,
+      "normalized_coefficient_deviation": "0.0"
+    },
+    {
+      "r": 31,
+      "dps": 60,
+      "same_structure": true,
+      "normalized_coefficient_deviation": "0.0"
+    },
+    {
+      "r": 33,
+      "dps": 60,
+      "same_structure": true,
+      "normalized_coefficient_deviation": "0.0"
+    },
+    {
+      "r": 63,
+      "dps": 100,
+      "same_structure": true,
+      "normalized_coefficient_deviation": "3.33e-89"
+    },
+    {
+      "r": 64,
+      "dps": 120,
+      "same_structure": true,
+      "normalized_coefficient_deviation": "0.0"
+    },
+    {
+      "r": 64,
+      "dps": 220,
+      "same_structure": true,
+      "normalized_coefficient_deviation": "0.0"
+    },
+    {
+      "r": 128,
+      "dps": 250,
+      "same_structure": true,
+      "normalized_coefficient_deviation": "1.22e-225"
+    },
+    {
+      "r": 128,
+      "dps": 350,
+      "same_structure": true,
+      "normalized_coefficient_deviation": "1.67e-325"
+    },
+    {
+      "r": 256,
+      "dps": 450,
+      "same_structure": true,
+      "normalized_coefficient_deviation": "0.0"
+    },
+    {
+      "r": 256,
+      "dps": 550,
+      "same_structure": true,
+      "normalized_coefficient_deviation": "7.9e-499"
+    }
+  ],
+  "missing": [],
+  "failures": [],
+  "status": "PASS"
+}

@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Build outputs
+build/
+dist/
+release/out/
+paper/print/
+
+# LaTeX intermediates (paper/tex/<lang>/main.*)
+paper/tex/*/main.log
+paper/tex/*/main.pdf
+paper/tex/*/main.aux
+paper/tex/*/main.blg
+paper/tex/*/main.bbl
+paper/tex/*/main.out
+paper/tex/*/main.toc
+paper/tex/*/main.fls
+paper/tex/*/main.fdb_latexmk
+paper/tex/*/main.synctex.gz
+paper/tex/*/main.xdv
+
+# Editors / OS
+.DS_Store
+*.swp
+.idea/
+.vscode/
+
+# Local credentials
+.env
+.env.*

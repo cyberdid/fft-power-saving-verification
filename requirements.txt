@@ -1,0 +1,2 @@
+# Runtime dependencies are pinned in release/requirements-lock.txt (Python 3.12).
+-r release/requirements-lock.txt

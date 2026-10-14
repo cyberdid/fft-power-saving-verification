@@ -1,0 +1,20 @@
+{
+  "checked_at": "2026-10-14T16:43:51.414618+03:00",
+  "status": "PASS",
+  "core_jobs_completed": 135,
+  "exact_entries": 147633,
+  "exact_mismatches": 0,
+  "current_source_unit_tests": 123,
+  "unit_test_log_sha256": "101b07af1fe1cf04c321a0df698f1300f2c53434e69568fce694347d3913894d",
+  "current_manuscript_table_checks": 1531,
+  "table_failures": 0,
+  "portable_checker_basis_entries": 256,
+  "portable_checker_mismatches": 0,
+  "pdf_pages": 24,
+  "pdf_sha256": "99dcfb94312489a5f7b97cfb84019041416157e5e02c959d8216176ee0fde1f9",
+  "article_sha256": "9a8ccc78079f284e32255d32976e57576e72e4694ff8e8493011afee3f9b1a3c",
+  "frozen_manifest_sha256": "48cb69363b29f0f4decc9119e5a03690716b6f981edffabbecd2bf220b2b5df4",
+  "promoted_frozen_evidence_byte_equal": true,
+  "promoted_figures_equal_qa_hashes": true,
+  "scope": "Finite tested widths and inputs; no global network.tex execution or asymptotic speedup validation."
+}

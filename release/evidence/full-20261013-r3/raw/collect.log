@@ -1,0 +1,16 @@
+depth_model_strict.csv 6
+depth_model_widths.csv 12
+dft_precision.csv 41
+strict_tables.csv 25
+v6/causal_levels.csv 6
+v6/cond.csv 5
+v6/cslots.csv 12
+v6/exact.csv 53
+v6/mp_dft.csv 28
+v6/phase_precision.csv 4
+v6/roots.csv 3
+v6/rounds.csv 6
+v6/stagewise.csv 15
+v6/timing.csv 4
+v6/toeplitz.csv 6
+v6/topology.csv 72

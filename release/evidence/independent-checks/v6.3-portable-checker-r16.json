@@ -1,0 +1,195 @@
+{
+ "script": "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/stream_exact_dft.py",
+ "project": "/home/cyberdid/Projects/FFT-Synthetic-Lab",
+ "argv": [
+  "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/stream_exact_dft.py",
+  "16",
+  "--project",
+  "/home/cyberdid/Projects/FFT-Synthetic-Lab",
+  "--primes",
+  "1",
+  "--basis",
+  "--materialise-check",
+  "--json",
+  "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/logs/post-promotion-stream-r16.json"
+ ],
+ "provenance": {
+  "checker_version": "codex-audit-v2",
+  "schema_version": 2,
+  "method": "SHA-256 of on-disk sources at start/end; not bytecode attestation",
+  "start": {
+   "captured_utc": "2026-10-14T13:41:34Z",
+   "script": {
+    "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/stream_exact_dft.py",
+    "sha256": "9eeedcbaf0568ba2899d016a8a82a7c2950dd74924b45cf94225ebeb3b6fee3b"
+   },
+   "project_modules": [
+    {
+     "name": "allength",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/__init__.py",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+     "name": "allength.chunk_dag",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/chunk_dag.py",
+     "sha256": "38a276d478e153745e1a293d7af2d1f85b30d224cd61817bf323ac7a398fa781"
+    },
+    {
+     "name": "allength.conv_dag",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/conv_dag.py",
+     "sha256": "6cca06f6eb679d75f8e1021ff3a2255fb1e43781f05b5095b1e35d97509590dd"
+    },
+    {
+     "name": "allength.exact_field",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/exact_field.py",
+     "sha256": "54f39cc96d1933bf0427f7b34fd02176bf92b18db239ed0795dbaebc90c64a32"
+    },
+    {
+     "name": "allength.exact_width",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/exact_width.py",
+     "sha256": "e561b3dbddbb4370183c3d4244e67836e65e7508f10d53ca3f2728c1a72e72e4"
+    },
+    {
+     "name": "allength.generic_word",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/generic_word.py",
+     "sha256": "4da3b96eb7372350ba7827daca872950560d88c51c64fcec12df23485acf7d1b"
+    },
+    {
+     "name": "allength.replay",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/replay.py",
+     "sha256": "eef8c645767b5d7b4f09900624b5370a6dd544cec94e2b8c961e8bf96a5eadc0"
+    },
+    {
+     "name": "allength.rounds",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/rounds.py",
+     "sha256": "fc9f9cf40fac4a1a76cde8cae09287bfbf8f8dbcd0138a65fd8cb3d8d5ec5ace"
+    },
+    {
+     "name": "allength.toeplitz_disp",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/toeplitz_disp.py",
+     "sha256": "a6970bce28515a0b3747814b2d2cc4566fb9a01db74ea3d5965a159d2248206c"
+    }
+   ]
+  },
+  "end": {
+   "captured_utc": "2026-10-14T13:41:34Z",
+   "script": {
+    "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/stream_exact_dft.py",
+    "sha256": "9eeedcbaf0568ba2899d016a8a82a7c2950dd74924b45cf94225ebeb3b6fee3b"
+   },
+   "project_modules": [
+    {
+     "name": "allength",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/__init__.py",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+     "name": "allength.chunk_dag",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/chunk_dag.py",
+     "sha256": "38a276d478e153745e1a293d7af2d1f85b30d224cd61817bf323ac7a398fa781"
+    },
+    {
+     "name": "allength.compiler",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/compiler.py",
+     "sha256": "e8c891356aab905acd1d5c3d14118112dc4cc38c87339bde4791f8b410814cde"
+    },
+    {
+     "name": "allength.conv_dag",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/conv_dag.py",
+     "sha256": "6cca06f6eb679d75f8e1021ff3a2255fb1e43781f05b5095b1e35d97509590dd"
+    },
+    {
+     "name": "allength.exact_field",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/exact_field.py",
+     "sha256": "54f39cc96d1933bf0427f7b34fd02176bf92b18db239ed0795dbaebc90c64a32"
+    },
+    {
+     "name": "allength.exact_width",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/exact_width.py",
+     "sha256": "e561b3dbddbb4370183c3d4244e67836e65e7508f10d53ca3f2728c1a72e72e4"
+    },
+    {
+     "name": "allength.generic_word",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/generic_word.py",
+     "sha256": "4da3b96eb7372350ba7827daca872950560d88c51c64fcec12df23485acf7d1b"
+    },
+    {
+     "name": "allength.replay",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/replay.py",
+     "sha256": "eef8c645767b5d7b4f09900624b5370a6dd544cec94e2b8c961e8bf96a5eadc0"
+    },
+    {
+     "name": "allength.rounds",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/rounds.py",
+     "sha256": "fc9f9cf40fac4a1a76cde8cae09287bfbf8f8dbcd0138a65fd8cb3d8d5ec5ace"
+    },
+    {
+     "name": "allength.toeplitz_disp",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/toeplitz_disp.py",
+     "sha256": "a6970bce28515a0b3747814b2d2cc4566fb9a01db74ea3d5965a159d2248206c"
+    }
+   ]
+  },
+  "sources_unchanged_between_snapshots": true
+ },
+ "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+ "r": 16,
+ "N": 128,
+ "runs": [
+  {
+   "r": 16,
+   "N": 128,
+   "prime_index": 0,
+   "p": 2305843009213695361,
+   "omega": 1828624640229619228,
+   "vectors": "basis(16)",
+   "n_vectors": 16,
+   "vectors_sha256": "c6ac7f2a6b40cee6c8da7c6bae11f7a8fc45054813f32fac45cb4b2c877f97c7",
+   "strict_KEEP_ZERO_MULTIPLIERS": true,
+   "corrupted": false,
+   "bad_transpose": null,
+   "corrupt_forward_layer": null,
+   "entries_checked": 256,
+   "mismatches": 0,
+   "layers_word": 1864,
+   "layers_tword": 1864,
+   "gates_word": {
+    "shears": 2360,
+    "scales": 16
+   },
+   "gates_tword": {
+    "shears": 2360,
+    "scales": 16
+   },
+   "gates_processed_total": 4752,
+   "gate_applications_total": 76032,
+   "sha256_word_stream": "a8060ad995dd57e99f35898f59264b4b974df7ee6145fca3a77f0e10ae3f6f3b",
+   "sha256_tword_stream": "e32eaf49fcd6f4cd1b3b843bf38216b8ee554cba079fb2f6bc0d7a826be5c330",
+   "polyhash_forward": "0x51a3b2f7700f8aff2e9d5b476c14e958",
+   "polyhash_reverse": "0x51a3b2f7700f8aff2e9d5b476c14e958",
+   "polyhash_transpose_input_emission_horner": "0x51a3b2f7700f8aff2e9d5b476c14e958",
+   "transpose_input_layer_order": "reverse",
+   "transpose_swaps_shear_ends": true,
+   "reverse_equals_reversed_forward": true,
+   "pairs_built_both_passes": 128,
+   "max_pair_dag_gates": 8,
+   "max_pair_replay_layers": 28,
+   "time_transpose_s": 0.0,
+   "time_forward_s": 0.0,
+   "time_total_s": 0.0,
+   "maxrss_mb_so_far": 35.7,
+   "outputs_sha256": "24c60bcecb95695b7093e2e7e1c6a7f52c299c10aa3912efde77d872e823cc31",
+   "materialised": {
+    "layers": 1864,
+    "sha_word_equal": true,
+    "sha_tword_equal": true,
+    "outputs_equal": true,
+    "sha256_word": "a8060ad995dd57e99f35898f59264b4b974df7ee6145fca3a77f0e10ae3f6f3b",
+    "sha256_tword": "e32eaf49fcd6f4cd1b3b843bf38216b8ee554cba079fb2f6bc0d7a826be5c330"
+   }
+  }
+ ],
+ "mismatches_total": 0,
+ "wall_s": 0.1,
+ "maxrss_mb": 61.6
+}

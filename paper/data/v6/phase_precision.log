@@ -1,0 +1,26 @@
+# Corrected phase controls, rerun 2026-10-14; separate multiply/add rounding and actual T-chain input.
+# This is a standalone four-case rerun, not the completed full reproduction.
+
+r=64 dps=50 stage=tword phases=['chunk', 'direct'] reference=200
+  baseline (all phases at DPS):           digits lost =   17.8
+  chunk   high precision, rest at DPS: digits lost =    3.3 (removes  14.5 digits)
+  direct  high precision, rest at DPS: digits lost =   17.8 (removes   0.0 digits)
+  all high precision EXCEPT chunk:        digits lost =   17.8
+
+r=64 dps=50 stage=word phases=['chunk', 'direct'] reference=200
+  baseline (all phases at DPS):           digits lost =   21.9
+  chunk   high precision, rest at DPS: digits lost =   11.6 (removes  10.3 digits)
+  direct  high precision, rest at DPS: digits lost =   21.9 (removes   0.0 digits)
+  all high precision EXCEPT chunk:        digits lost =   21.9
+
+r=128 dps=90 stage=tword phases=['chunk', 'direct'] reference=240
+  baseline (all phases at DPS):           digits lost =   42.6
+  chunk   high precision, rest at DPS: digits lost =    5.2 (removes  37.5 digits)
+  direct  high precision, rest at DPS: digits lost =   42.6 (removes   0.0 digits)
+  all high precision EXCEPT chunk:        digits lost =   42.6
+
+r=128 dps=90 stage=word phases=['chunk', 'direct'] reference=240
+  baseline (all phases at DPS):           digits lost =   50.6
+  chunk   high precision, rest at DPS: digits lost =   22.6 (removes  27.9 digits)
+  direct  high precision, rest at DPS: digits lost =   51.0 (removes  -0.4 digits)
+  all high precision EXCEPT chunk:        digits lost =   51.0

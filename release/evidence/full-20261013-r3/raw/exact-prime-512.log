@@ -1,0 +1,2 @@
+exact r=512 F_p p=2305843009213800449 (p = 1 mod 4096) word random(2): entries checked=1024 mismatches=0 layers=2074880 build=31s total=63s
+exact r=512 F_p p=2305843009213812737 (p = 1 mod 4096) word random(2): entries checked=1024 mismatches=0 layers=2074880 build=31s total=63s

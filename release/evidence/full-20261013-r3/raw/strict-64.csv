@@ -1,0 +1,3 @@
+r,rule,input,b_adm,depth,layers,shears,scales,ops,signature,seconds
+64,adaptive,seed,1,37668,50464,64736,64,64800,4272306277cdf008,0
+64,chunk1,seed,1,37668,50464,64736,64,64800,4272306277cdf008,0

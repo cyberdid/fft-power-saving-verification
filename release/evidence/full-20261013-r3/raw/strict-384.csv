@@ -1,0 +1,3 @@
+r,rule,input,b_adm,depth,layers,shears,scales,ops,signature,seconds
+384,adaptive,seed,4,592581,1208640,9580992,384,9581376,cf3afb9930c57114,8
+384,chunk1,seed,1,1375941,2033472,2613696,384,2614080,257a7a0d6728e143,7

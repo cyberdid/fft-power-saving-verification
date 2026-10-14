@@ -1,0 +1,3 @@
+exact r=127 F_p p=2305843009215510529 (p = 1 mod 130048) word basis(127): entries checked=16129 mismatches=0 layers=212248 build=2s total=59s
+exact r=127 F_p p=2305843009223703553 (p = 1 mod 130048) word basis(127): entries checked=16129 mismatches=0 layers=212248 build=2s total=82s
+exact r=127 F_p p=2305843009226044417 (p = 1 mod 130048) word basis(127): entries checked=16129 mismatches=0 layers=212248 build=2s total=77s

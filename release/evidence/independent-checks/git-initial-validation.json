@@ -1,0 +1,15 @@
+{
+  "checked_at": "2026-10-14T20:09:10.915674+03:00",
+  "status": "PASS",
+  "unit_tests": 123,
+  "table_checks": 1531,
+  "table_failures": 0,
+  "full_plan_jobs": 135,
+  "generated_table_body_files_byte_equal": 34,
+  "prior_evidence_files_byte_equal": 203,
+  "article_validation_reference_sha256": "593ef2b49fc3f42a7e83ba3d223bcb9e6c1e5566c80b090a83b7c7bfe30a6849",
+  "english_tex_sha256": "63d60d8eaf4106fb44b62126e1caac7500459cfe55f4a69788ea03830d6175c3",
+  "english_pdf_sha256": "026f8f3d2dac61b7dc4cc3d426908d7daab104cc96c8dd9ff06f8a36cc1493a3",
+  "manuscript_status": "English working draft; full translation/typesetting QA and Ukrainian typeset version pending.",
+  "tests_log_sha256": "1a0a57f58630759d135cfc687d14276802f93268af9a084fe0501faf778d6c8a"
+}

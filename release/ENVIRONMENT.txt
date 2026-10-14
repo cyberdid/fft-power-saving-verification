@@ -1,0 +1,20 @@
+python: Python 3.12.3
+os: Linux 7.0.0-38-generic
+cpu: Intel(R) Core(TM) i9-14900HX
+logical_cpus: 32
+ram_gib_rounded: 31
+lean: leanprover/lean4:v4.34.1
+mathlib_rev: d13f23b723b8a846827a245b89c10fc7d3f11612
+preprint_repo: github.com/openai/math dir commit 301488868, HEAD fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb
+date: 2026-10-13
+note: The development .venv was created with --system-site-packages; scipy 1.11.4 came from
+      /usr/lib/python3/dist-packages and so is absent from the full freeze. scipy IS a hard
+      dependency: allength/compiler.py imports scipy.optimize.least_squares at module load, so
+      importing the package fails without it. For a clean, portable install use
+      requirements-lock.txt (numpy, mpmath, matplotlib, scipy), which does include scipy.
+      requirements-full-freeze.txt is the raw development-machine pip freeze (OS packages
+      included) kept only as a record; it is not an installable lock.
+
+unit_clarification_2026_10_14: /proc/meminfo MemTotal=32549596 KiB, approximately31.04GiB;
+      the historical rounded31 denotesGiB. logical_cpus is the OS logical CPU count,
+      not a count of physical cores. Numeric experiment code was not changed.

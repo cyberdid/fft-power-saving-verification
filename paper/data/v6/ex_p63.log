@@ -1,0 +1,3 @@
+exact r=63 F_p p=2305843009214105089 (p = 1 mod 32256) word basis(63): entries checked=3969 mismatches=0 layers=48888 build=1s total=9s
+exact r=63 F_p p=2305843009215685633 (p = 1 mod 32256) word basis(63): entries checked=3969 mismatches=0 layers=48888 build=1s total=8s
+exact r=63 F_p p=2305843009215814657 (p = 1 mod 32256) word basis(63): entries checked=3969 mismatches=0 layers=48888 build=0s total=6s

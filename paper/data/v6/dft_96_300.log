@@ -1,0 +1,1 @@
+mp  r=96 dps=300 random(3): max rel err=6.5e-253 median=5.95e-253 digits lost=47.8 log10 max|H|=7.7 log10 max|1/H|=5.7 layers=121296 build=3s total=8s

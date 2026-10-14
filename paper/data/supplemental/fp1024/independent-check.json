@@ -1,0 +1,218 @@
+{
+  "checked_at": "2026-10-14T11:43:54.692723+03:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "label": "2 fields, 2 vectors each, 4096 coordinates",
+      "pass": true
+    },
+    {
+      "label": "0 mismatches",
+      "pass": true
+    },
+    {
+      "label": "field0 matches original p",
+      "pass": true
+    },
+    {
+      "label": "field0 matches original omega",
+      "pass": true
+    },
+    {
+      "label": "field0 matches original vectors_sha256",
+      "pass": true
+    },
+    {
+      "label": "field0 matches original outputs_sha256",
+      "pass": true
+    },
+    {
+      "label": "field0 matches original sha256_word_stream",
+      "pass": true
+    },
+    {
+      "label": "field0 matches original sha256_tword_stream",
+      "pass": true
+    },
+    {
+      "label": "field0 matches original entries_checked",
+      "pass": true
+    },
+    {
+      "label": "field0 matches original layers_word",
+      "pass": true
+    },
+    {
+      "label": "field0 matches original gates_word",
+      "pass": true
+    },
+    {
+      "label": "field0 matches original layers_tword",
+      "pass": true
+    },
+    {
+      "label": "field0 matches original gates_tword",
+      "pass": true
+    },
+    {
+      "label": "field0 correct actual transpose diagnostics",
+      "pass": true
+    },
+    {
+      "label": "field0 strict and uncorrupted",
+      "pass": true
+    },
+    {
+      "label": "field1 matches original p",
+      "pass": true
+    },
+    {
+      "label": "field1 matches original omega",
+      "pass": true
+    },
+    {
+      "label": "field1 matches original vectors_sha256",
+      "pass": true
+    },
+    {
+      "label": "field1 matches original outputs_sha256",
+      "pass": true
+    },
+    {
+      "label": "field1 matches original sha256_word_stream",
+      "pass": true
+    },
+    {
+      "label": "field1 matches original sha256_tword_stream",
+      "pass": true
+    },
+    {
+      "label": "field1 matches original entries_checked",
+      "pass": true
+    },
+    {
+      "label": "field1 matches original layers_word",
+      "pass": true
+    },
+    {
+      "label": "field1 matches original gates_word",
+      "pass": true
+    },
+    {
+      "label": "field1 matches original layers_tword",
+      "pass": true
+    },
+    {
+      "label": "field1 matches original gates_tword",
+      "pass": true
+    },
+    {
+      "label": "field1 correct actual transpose diagnostics",
+      "pass": true
+    },
+    {
+      "label": "field1 strict and uncorrupted",
+      "pass": true
+    },
+    {
+      "label": "execution sources unchanged",
+      "pass": true
+    },
+    {
+      "label": "start source SHA /home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/parallel/fp-1024/stream_exact_dft.py",
+      "pass": true
+    },
+    {
+      "label": "start source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/__init__.py",
+      "pass": true
+    },
+    {
+      "label": "start source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/chunk_dag.py",
+      "pass": true
+    },
+    {
+      "label": "start source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/conv_dag.py",
+      "pass": true
+    },
+    {
+      "label": "start source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/exact_field.py",
+      "pass": true
+    },
+    {
+      "label": "start source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/exact_width.py",
+      "pass": true
+    },
+    {
+      "label": "start source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/generic_word.py",
+      "pass": true
+    },
+    {
+      "label": "start source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/replay.py",
+      "pass": true
+    },
+    {
+      "label": "start source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/rounds.py",
+      "pass": true
+    },
+    {
+      "label": "start source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/toeplitz_disp.py",
+      "pass": true
+    },
+    {
+      "label": "end source SHA /home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/parallel/fp-1024/stream_exact_dft.py",
+      "pass": true
+    },
+    {
+      "label": "end source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/__init__.py",
+      "pass": true
+    },
+    {
+      "label": "end source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/chunk_dag.py",
+      "pass": true
+    },
+    {
+      "label": "end source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/conv_dag.py",
+      "pass": true
+    },
+    {
+      "label": "end source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/exact_field.py",
+      "pass": true
+    },
+    {
+      "label": "end source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/exact_width.py",
+      "pass": true
+    },
+    {
+      "label": "end source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/generic_word.py",
+      "pass": true
+    },
+    {
+      "label": "end source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/replay.py",
+      "pass": true
+    },
+    {
+      "label": "end source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/rounds.py",
+      "pass": true
+    },
+    {
+      "label": "end source SHA /home/cyberdid/Projects/FFT-Synthetic-Lab/allength/toeplitz_disp.py",
+      "pass": true
+    },
+    {
+      "label": "shell exit0",
+      "pass": true
+    },
+    {
+      "label": "GNU time exit0",
+      "pass": true
+    }
+  ],
+  "mismatches": 0,
+  "entries_checked": 4096,
+  "wall_s": 431.9,
+  "peak_rss_mib": 37.91015625,
+  "schema_version": 2,
+  "checker_sha256": "9eeedcbaf0568ba2899d016a8a82a7c2950dd74924b45cf94225ebeb3b6fee3b",
+  "result_sha256": "858185d37db39a3279b4608d461c0897c01e2f7ccbe89ed0f710d0a8e4e6f1ef",
+  "limitation": "2 identical-seed integer vectors reused across 2 fields; finite-field necessary condition; not complex matrix proof; source snapshots are on-disk hashes, not bytecode attestation."
+}

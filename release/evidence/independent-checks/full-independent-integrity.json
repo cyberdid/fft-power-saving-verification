@@ -1,0 +1,9 @@
+{
+  "checked_at": "2026-10-14T13:10:56.968394+00:00",
+  "status": "PASS",
+  "errors": [],
+  "successful_jobs": 135,
+  "source_files": 283,
+  "collection_inputs": 159,
+  "manifest_sha256": "48cb69363b29f0f4decc9119e5a03690716b6f981edffabbecd2bf220b2b5df4"
+}

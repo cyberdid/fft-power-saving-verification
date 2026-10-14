@@ -1,0 +1,2 @@
+exact r=255 F_p p=2305843009218385921 (p = 1 mod 522240) word random(3): entries checked=765 mismatches=0 layers=791256 build=7s total=18s
+exact r=255 F_p p=2305843009223608321 (p = 1 mod 522240) word random(3): entries checked=765 mismatches=0 layers=791256 build=7s total=18s

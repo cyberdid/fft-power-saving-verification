@@ -1,0 +1,14 @@
+fft-power-saving-verification
+Copyright 2026 Oleksandr Pylypenko
+
+This product contains an independent computational verification of the local
+Fourier compiler described in the preprint "An explicit power saving for the
+exact discrete Fourier transform" (github.com/openai/math): code, tests, raw
+logs, aggregated data, figures and the manuscript describing the results.
+
+The preprint itself and its Lean formalization are NOT included in this
+repository. They belong to their authors and are distributed by them under
+their own terms. This repository only references them by repository, commit
+and file hashes (see release/ENVIRONMENT.txt, release/lean/ and the
+manuscript), and release/lean/ contains only build configuration, pins and
+logs needed to recompile the formalization from its own source.

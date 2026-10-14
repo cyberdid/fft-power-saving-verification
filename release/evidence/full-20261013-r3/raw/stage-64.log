@@ -1,0 +1,8 @@
+r=64 dps=120 (reference 270)
+stage  local_lost  cumul_lost  log10_growth  log10_norm
+1 Dh           0.3        0.3          5.4         4.9
+2 T^T         17.5       18.0         19.1         8.9
+3 Dmid        -0.3       20.9         -0.7         8.1
+4 T           21.9       26.5          9.2         4.0
+5 Dh           0.3       29.1         -3.5         0.9
+log10 cond2(T) = 9.0; log10 cond2(Dh) = 9.0

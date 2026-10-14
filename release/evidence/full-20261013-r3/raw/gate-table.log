@@ -1,0 +1,21 @@
+/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/allength/toeplitz_disp.py:33: RuntimeWarning: overflow encountered in scalar add
+  g[k] = -(1 / h[0]) * sum(h[j] * g[k - j] for j in range(1, k + 1))
+/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/allength/toeplitz_disp.py:33: RuntimeWarning: invalid value encountered in scalar multiply
+  g[k] = -(1 / h[0]) * sum(h[j] * g[k - j] for j in range(1, k + 1))
+/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/allength/toeplitz_disp.py:33: RuntimeWarning: overflow encountered in scalar multiply
+  g[k] = -(1 / h[0]) * sum(h[j] * g[k - j] for j in range(1, k + 1))
+/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/allength/toeplitz_disp.py:39: RuntimeWarning: overflow encountered in scalar multiply
+  return sum(h[i - nu] * g[nu - j] for nu in range(j, p))
+/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/allength/toeplitz_disp.py:39: RuntimeWarning: overflow encountered in scalar add
+  return sum(h[i - nu] * g[nu - j] for nu in range(j, p))
+/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/allength/toeplitz_disp.py:65: RuntimeWarning: invalid value encountered in multiply
+  R0 = row0 - v1[0] * w1            # row 0 of R
+/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/allength/toeplitz_disp.py:66: RuntimeWarning: overflow encountered in multiply
+  Rc = col0 - v1 * w1[0]            # column 0 of R
+/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/allength/toeplitz_disp.py:66: RuntimeWarning: overflow encountered in subtract
+  Rc = col0 - v1 * w1[0]            # column 0 of R
+/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/allength/toeplitz_disp.py:39: RuntimeWarning: invalid value encountered in scalar add
+  return sum(h[i - nu] * g[nu - j] for nu in range(j, p))
+/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/allength/toeplitz_disp.py:39: RuntimeWarning: invalid value encountered in scalar multiply
+  return sum(h[i - nu] * g[nu - j] for nu in range(j, p))
+saved 1024 entries to /home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/data/gate_count_table_b_le_1024.pkl

@@ -1,0 +1,25 @@
+1024 adaptive seed 8 1682212 4796928 64638464 1024 64639488 be1d84a5eb4044f6 61
+Traceback (most recent call last):
+  File "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/strict_tables.py", line 155, in <module>
+    w = csv.writer(f)
+              ^^^^^^^^
+  File "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/strict_tables.py", line 125, in run
+    t = time.time()
+        ^^^^^^^^^^^^
+  File "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/strict_tables.py", line 116, in stream_word
+    Z = borrowed[:dag.g]
+^
+  File "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/strict_tables.py", line 100, in rec
+    if b == 0:
+    ^^^^^^^^^^^
+  File "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/strict_tables.py", line 100, in rec
+    if b == 0:
+    ^^^^^^^^^^^
+  File "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/strict_tables.py", line 100, in rec
+    if b == 0:
+    ^^^^^^^^^^^
+  [Previous line repeated 4 more times]
+  File "/home/cyberdid/Projects/FFT-Synthetic-Lab/paper/scripts/strict_tables.py", line 110, in rec
+    J = list(range(j0, min(j0 + b, lo + p)))
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: pair does not fit its block

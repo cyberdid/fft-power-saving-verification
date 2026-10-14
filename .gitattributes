@@ -1,0 +1,5 @@
+# Preserve file bytes covered by the reproduction/checksum manifests.
+* -text
+*.pdf binary
+*.png binary
+*.pkl binary

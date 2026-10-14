@@ -1,0 +1,21 @@
+mode: strict
+model: d(256)=518948 d(512)=1035044 d(1024)=1682212 (compare with measured ASAP depths of the same mode)
+width-model r=64 b=1 depth=37668
+width-model r=128 b=2 depth=133924
+width-model r=256 b=2 depth=518948
+width-model r=288 b=2 depth=656793
+width-model r=320 b=2 depth=811515
+width-model r=336 b=3 depth=626207
+width-model r=352 b=4 depth=497783
+width-model r=384 b=4 depth=592581
+width-model r=512 b=4 depth=1035044
+width-model r=640 b=4 depth=1617915
+width-model r=768 b=4 depth=1753797
+width-model r=1024 b=8 depth=1682212
+  r        b     d(r)          d/log2(r)^4
+2^12     16       7383844     356.09
+2^13     32      11021092     385.88
+2^14     64      15182628     395.22
+2^15    128      19868452     392.46
+2^16    256      25078564     382.67
+2^17    512      30812964     368.92

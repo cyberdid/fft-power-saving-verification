@@ -1,0 +1,27 @@
+10:56:25 start r=1024 N=8192 primes=2 nvec=2 basis=False mat=False corrupt=False python=3.12.3 pid=2022515 strict=True
+10:56:25 r=1024 prime#0 p=2305843009213800449 (p = 1 mod 8192) vectors=random(2), seed random.Random(1024).randrange(p) vec_sha=6160a68505f6b461
+10:57:20   [transpose] layers=1000000 gates=31881416 t=55s rss=38MB maxrss=37MB
+10:57:35   [transpose] layers=2000000 gates=40425288 t=70s rss=38MB maxrss=37MB
+10:57:52   [transpose] layers=3000000 gates=50136512 t=87s rss=38MB maxrss=37MB
+10:58:08   [transpose] layers=4000000 gates=59565504 t=103s rss=38MB maxrss=37MB
+10:58:17   transpose pass: layers=4796928 gates=64639488 t=112s maxrss=37MB
+10:58:27   [forward] layers=1000000 gates=6009874 t=10s rss=38MB maxrss=37MB
+10:58:47   [forward] layers=2000000 gates=18255036 t=30s rss=38MB maxrss=37MB
+10:58:59   [forward] layers=3000000 gates=25191366 t=42s rss=38MB maxrss=37MB
+10:59:17   [forward] layers=4000000 gates=36510012 t=60s rss=38MB maxrss=37MB
+11:00:07   forward pass:   layers=4796928 gates=64639488 t=111s maxrss=37MB
+11:00:08 exact-stream r=1024 F_p p=2305843009213800449 random(2): entries checked=2048 mismatches=0 layers=4796928 gates/word=64639488 rev==fwd:True total=223s maxrss=37MB
+11:00:08 r=1024 prime#1 p=2305843009213931521 (p = 1 mod 8192) vectors=random(2), seed random.Random(1024).randrange(p) vec_sha=6160a68505f6b461
+11:01:06   [transpose] layers=1000000 gates=31881416 t=59s rss=38MB maxrss=37MB
+11:01:21   [transpose] layers=2000000 gates=40425288 t=74s rss=38MB maxrss=37MB
+11:01:39   [transpose] layers=3000000 gates=50136512 t=91s rss=38MB maxrss=37MB
+11:01:57   [transpose] layers=4000000 gates=59565504 t=109s rss=38MB maxrss=37MB
+11:02:06   transpose pass: layers=4796928 gates=64639488 t=118s maxrss=37MB
+11:02:17   [forward] layers=1000000 gates=6009874 t=11s rss=38MB maxrss=37MB
+11:02:36   [forward] layers=2000000 gates=18255036 t=30s rss=38MB maxrss=37MB
+11:02:49   [forward] layers=3000000 gates=25191366 t=43s rss=38MB maxrss=37MB
+11:03:08   [forward] layers=4000000 gates=36510012 t=62s rss=38MB maxrss=37MB
+11:03:55   forward pass:   layers=4796928 gates=64639488 t=109s maxrss=37MB
+11:03:56 exact-stream r=1024 F_p p=2305843009213931521 random(2): entries checked=2048 mismatches=0 layers=4796928 gates/word=64639488 rev==fwd:True total=228s maxrss=37MB
+11:03:56 done r=1024 mismatches_total=0 wall=450.9s maxrss=37.5MB
+exit=0

@@ -1,0 +1,4167 @@
+{
+  "mode": "full",
+  "status": "complete",
+  "started": "2026-10-13T20:27:31.415495+00:00",
+  "python": "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+  "source_sha256": {
+    "allength/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "allength/assembly.py": "e4f409a844531977a76531dd04fc8533584f9a41b9be0ea24cf490d42733b25b",
+    "allength/batching.py": "cb1bbbbdf16386b9a0fb6cb7286facb32340ede4443612dfd3881c499f688df0",
+    "allength/chunk_dag.py": "38a276d478e153745e1a293d7af2d1f85b30d224cd61817bf323ac7a398fa781",
+    "allength/compiler.py": "e8c891356aab905acd1d5c3d14118112dc4cc38c87339bde4791f8b410814cde",
+    "allength/conv_dag.py": "6cca06f6eb679d75f8e1021ff3a2255fb1e43781f05b5095b1e35d97509590dd",
+    "allength/depth_recurrence.py": "17cb55fcc55da7072212040afd6cdb0840205425f949e15c4330176a8481c6a0",
+    "allength/dft_all.py": "20f58912e8ed96c6966daf561522ba951e9ffd817ec0debfa0aef6a33ff0c284",
+    "allength/edge_kernels.py": "dba961b6f5e06d595f8b8d291bb9ce8a575d9042dbcb150a244075beb47ab3dd",
+    "allength/exact_field.py": "54f39cc96d1933bf0427f7b34fd02176bf92b18db239ed0795dbaebc90c64a32",
+    "allength/exact_width.py": "e561b3dbddbb4370183c3d4244e67836e65e7508f10d53ca3f2728c1a72e72e4",
+    "allength/frame_mod4.py": "ad3e57b9eb652f0aa51b0f41bcc584f7d2d7bb871588fa94ee947dcb90c17668",
+    "allength/generic_word.py": "4da3b96eb7372350ba7827daca872950560d88c51c64fcec12df23485acf7d1b",
+    "allength/indexing.py": "98c4541ad05edb47671217ae38ef8fdc5d1051c2bd683d453e4511f7dd60e117",
+    "allength/mp_compiler.py": "20a7ed6c4810fd8c1ce47cbd8e4cee247e4ee98fb2d55e8b21a3119d7944f57f",
+    "allength/mp_exact.py": "d56ade01c8f37e977558ae653c04dffdd22bb7019e546c60ae88d4958386adc6",
+    "allength/network_small.py": "8832577bfc34a20f986b09f097978a86a2afb4132c398ec495d49655db51cf19",
+    "allength/newton_local.py": "fcbbcebb1050f8caa084b6896a08c68bf496d5293434e3337a18a45fb3e06daa",
+    "allength/packing.py": "445c4139671ff6eb93b24342d22db50526cc3d3b7df169aca4da4b9bbc759312",
+    "allength/printer.py": "ea3b0994910f5a0ffed01b2306fafc0711f499c4e3b13a884815c594abee238b",
+    "allength/replay.py": "eef8c645767b5d7b4f09900624b5370a6dd544cec94e2b8c961e8bf96a5eadc0",
+    "allength/rounds.py": "fc9f9cf40fac4a1a76cde8cae09287bfbf8f8dbcd0138a65fd8cb3d8d5ec5ace",
+    "allength/subspace_decomp.py": "2cb6c656028284eb31d1105354d0b52831be112ce0ee14020f5789b2d3532bcb",
+    "allength/tensor_sync.py": "fa2d37d2a1c84eec198c93b592ce7afeafa10e661886d946c2d3ff85f6a142aa",
+    "allength/toeplitz_disp.py": "a6970bce28515a0b3747814b2d2cc4566fb9a01db74ea3d5965a159d2248206c",
+    "exact.py": "e777320f30735e09138e6fee6f2b07dc41f87fcff2f4ce9dba3680e12449efc7",
+    "numerical.py": "3d3211f529e0b4270e57d8b29e26fada4b5872bd9b274f703be1588f03c94bff",
+    "paper/article-ua.txt": "30ea0953d4b7edfd7c8c5028ed80d81771d7f8f3101c467aafc75401503af3f5",
+    "paper/data/depth_model_strict.csv": "1a9b527051baf5e414efe7f0ddadeb9098eeee0f02e93d9b2b9e33f727b5d878",
+    "paper/data/dft_precision.csv": "001c9752ad0d10390895c46bae7780678079b6007078cac1715c9c925e752e77",
+    "paper/data/seed_sweep.csv": "7e3c5157115e2f623eb537b76a8e496530898e9c9c01ac38d4467b9c00aba276",
+    "paper/data/seed_sweep.log": "43d056d5375f4fdc08e6708eee7d3191be2dc5803a2e9efaed82f2f923e862e6",
+    "paper/data/strict_parts/c1_1024.csv": "2121ade7ce5b21d397f7a8479cfa73f51d8d010fead37b1bce8267c7804418b4",
+    "paper/data/strict_parts/c1_1024.log": "a240c848387663757ca99e753d6e3e32e588a78c96dd8756f6e45272a6930ed4",
+    "paper/data/strict_parts/c1_128.log": "80ea767ba6c49a218d9fe70f05dd30b3bc51159a5145a752d5bc8a1488b88e4b",
+    "paper/data/strict_parts/c1_256.csv": "5369ea6838d3ffd63202a09c9a5b69d162485263b1a5540fb2c5aa5b16ad0c09",
+    "paper/data/strict_parts/c1_256.log": "52334dbfec56eef38b3a5c04f66dce2a19a6abc0181d827dd339a1235bb88a2d",
+    "paper/data/strict_parts/c1_288.csv": "df7bae941903b33914346bbfd0d983d4121d5ee9a74c945ee88f7fb7952eef53",
+    "paper/data/strict_parts/c1_288.log": "6c1c2d22bbfc479f50aae6515cdfcc93f1ae2f4cfd629742105ddc11c70b0ece",
+    "paper/data/strict_parts/c1_320.csv": "e620e39fa719954831a0d3f558f7b4210b37ec43265a89c1ccc24febf04ea4a7",
+    "paper/data/strict_parts/c1_320.log": "80bba860f48b85ed0d20ee89faf50ef126a4e5423dd56e8a901265fbe80bebcb",
+    "paper/data/strict_parts/c1_336.csv": "9e2f72565545d4e7645753d407e06f4fb0802ea44c32b7822c8476b14896f8a1",
+    "paper/data/strict_parts/c1_336.log": "379cd7bb4a5e46dc95825d8ef82266c5f4d226aa42d00bb46b2bef651fe16004",
+    "paper/data/strict_parts/c1_352.csv": "3ef601b203acc370cd975cf014c871dc1c8a2e8101fd3d5bb87aa79f049e3022",
+    "paper/data/strict_parts/c1_352.log": "a897880d0368fec9ea5c42d80b5232b3ef671c95c9d3108cf9a63dc9b580406b",
+    "paper/data/strict_parts/c1_384.csv": "41fa7a8a8b1c35ebf43191fb6b5cb743743cae02890eee538c4d103a2dd3ded8",
+    "paper/data/strict_parts/c1_384.log": "800aaa10eecdcc25fb45ccbb86f0f16a80500d6a1c6847464b6452f4a27e04da",
+    "paper/data/strict_parts/c1_512.csv": "4be92394b16dfd45d988de699fbb2368a20493863b5926a4fae5c3131006c9c3",
+    "paper/data/strict_parts/c1_512.log": "47184ba4fec3d41562237b7d882f28c08763ee2bd46a11a799445ee3b5f12d4c",
+    "paper/data/strict_parts/c1_64.log": "00971ea9d5b4fedb5c4bdeba19f421627c805a13b4c73df3b2fb775e958eb2a6",
+    "paper/data/strict_parts/c1_640.csv": "046fa1f2965bdb81219064007e9c8180971d76fce56a573db85910d69a63e08b",
+    "paper/data/strict_parts/c1_640.log": "44bd333f28438068101d979d7c0b35ccc3fc34123e16490bf29a4946752b462d",
+    "paper/data/strict_parts/c1_768.csv": "e982a76e9a3be0a991ea125f7ba795fc97d7afbc104521ba04c5b68b514ee810",
+    "paper/data/strict_parts/c1_768.log": "262ecf10fd0b1f7c07a5cb5d8abb750b6b0610057ced989d757e7f2cc8bb3af0",
+    "paper/data/strict_parts/cap2_512.csv": "8d5d50c51a0ae582132cb3bcb5c4adb89ac1d94d8b5271f879b512149ca01c71",
+    "paper/data/strict_parts/cap2_512.log": "6eb228369cb69ae9215a407c4b5a78086091c72d93d2f8ae0562dc276c207e9e",
+    "paper/data/strict_parts/dft_128_250.log": "ed439ca05cef93f3536a3124b4051ea081851b57ee30bfc9fc71a9b083e638ad",
+    "paper/data/strict_parts/dft_128_350.log": "cbfc43aa82a9228d953dadc7f8452e9a2a51f0a5d9cd92ee8a8a077939823a02",
+    "paper/data/strict_parts/dft_256_450.log": "3f5270b13d04bf10df32cdceab36191b476c3a5964feac19fd58a03097005515",
+    "paper/data/strict_parts/dft_256_550.log": "8e34e15bc15f4e371acb82362c8d0e1d195b1f34dd7752b2ff226b60dadec589",
+    "paper/data/strict_parts/dft_64_120.log": "394c5f72b0e00319b0e8bbf81c683011710968ce8998ced9a1c1f39db2bb0fa6",
+    "paper/data/strict_parts/dft_64_220.log": "fc61569eea4d8cee9884f3a15b8d958a9e09ac227ca848827345764ea62c702f",
+    "paper/data/strict_parts/gate_table_strict.log": "7da895a9130f3ea839c1bba0c6c42ed749eb926ba2abbb3a64425fe1ed7ab63e",
+    "paper/data/strict_parts/ones_256.csv": "8ad4af895d352840031b28c634ffc52cc240c9bcc69035beb905a5d45b56af94",
+    "paper/data/strict_parts/ones_256.log": "f7f52ec98d629040256643ad4c02a4c318cc9ba8e49c316ee8d8f6cbb046b3e7",
+    "paper/data/strict_parts/ones_336.csv": "b5b14f82082b6b8ba4677740a11278ab11be445135faed807a83bdf795055e80",
+    "paper/data/strict_parts/ones_336.log": "d79fd70dd5d7878747ba4b854a7c8bf1bce58402bbd51e1404a11cc7d9335ee4",
+    "paper/data/strict_parts/ones_512.csv": "a7d603083f3d4fddf105f31f5f6b65ec208b065352b710598fe2de9fe61af291",
+    "paper/data/strict_parts/ones_512.log": "544978cdd7e021a321b3c75fea12bf3c0ce2952ddebfea67487b93017c386d5b",
+    "paper/data/strict_parts/ones_c1_256.csv": "c689a0d43bdf4363e0b3f4822c9f27a4f16cced021cd163c1a8fe3ea534971f7",
+    "paper/data/strict_parts/ones_c1_256.log": "fc348435f2d76412fa160ad24dbf4cb5f680b7d8094ddca28e0b5d9e163c4011",
+    "paper/data/strict_parts/ones_c1_336.csv": "87f62f11d7619f54e7c2a42060103a73262575aa269023a5e6d47d196b0a4e87",
+    "paper/data/strict_parts/ones_c1_336.log": "774eda3816632c81b63ff3d4da75d73957bbb4c899d18f28f0a924a17cc6a28e",
+    "paper/data/strict_parts/ones_c1_512.csv": "d3b0b6c043730463616e84d9c0e116cb7f9dffb5e53487536e4ecf2727355c06",
+    "paper/data/strict_parts/ones_c1_512.log": "d74e877716e7b13abaebe00d55fc5b36b2c8564ca45799f51ecccea0f84934e8",
+    "paper/data/strict_parts/seed2_256.csv": "29b13499ce171c35f7f72c42cbe2958edc268847cb2f11f717c151549d2dc679",
+    "paper/data/strict_parts/seed2_256.log": "fdc40e769eca57d9a8fa34574c12102043a9de82d33343c66182bb73e878fe6f",
+    "paper/data/strict_parts/seed2_336.csv": "b6230e141169873c5b6d6d1779fcab127999e0cb604cacfd577654788412a516",
+    "paper/data/strict_parts/seed2_336.log": "0b28ed9b6ae7d6e61cbf785fb28b021a7cf6664c4df705cb0c708e86dc8e5c8f",
+    "paper/data/strict_parts/seed2_512.csv": "aef7a5781c00adbcc6aab9ac98476f1047f66692a5e1acfc1f9fb6aefc5533ca",
+    "paper/data/strict_parts/seed2_512.log": "49e86c53cea9f50055968f2d78edd6b0e640123cffdc09a7b3968dcaf032e048",
+    "paper/data/strict_parts/seed2_c1_256.csv": "be34bda2c7fa91155b41595debe9ac859971494fff752e2f2c6373c80df52d73",
+    "paper/data/strict_parts/seed2_c1_256.log": "735180e79012fd2b451c4f8017a7ec425bc1be094bd75df12a3dfbe8bb0f3ea7",
+    "paper/data/strict_parts/seed2_c1_336.csv": "604487b50a169db4d2ae53861df9c1c1989f346f95a614a9184ec21fde5d3185",
+    "paper/data/strict_parts/seed2_c1_336.log": "58f93926ca3bebe39185cb2c7e61351442332ab8dbae85e6d11a8abf5d63787e",
+    "paper/data/strict_parts/seed2_c1_512.csv": "e90cba9a185383949f0a2226e26d80159fe757754119c97ade960afae6adb747",
+    "paper/data/strict_parts/seed2_c1_512.log": "6b65baf9d6aa2e81df2282ae2241cfbfaf1a9ba05132d465b0b082a811b91fcf",
+    "paper/data/strict_parts/seed_1024.csv": "e7fa436464117441c837128683de6474ca713adc5c59e8a98f4fa02be427348d",
+    "paper/data/strict_parts/seed_1024.log": "679a47bed009803ec30507e59d37417cd8e61a90c6a634e7de390ee5f32478ff",
+    "paper/data/strict_parts/seed_128.csv": "c268afd3b77d3c4d9a32e22de66711caf7bfb5fd18c976875f54b0ce8a1bc6c0",
+    "paper/data/strict_parts/seed_128.log": "87fbeec8ba1998d437c9cf841ef16b132dacdadf70d75f2fa4d4960535e5a8bf",
+    "paper/data/strict_parts/seed_256.csv": "b108cd5fa8e9024c2696edbb953fbb451bd6ba542e7c4143b4ad90dcd1e2cead",
+    "paper/data/strict_parts/seed_256.log": "d87a6c676b1619734bcb4e119a12bc4bd6eaf52fdd841384a25acf6a8f295fdb",
+    "paper/data/strict_parts/seed_288.csv": "d6e53f90f391d542d834e116abb55ce5820582dbeff5b8ed46891f4d3ba08500",
+    "paper/data/strict_parts/seed_288.log": "bc1b6f79606c7ee75246e1c30ebef345661623f5da4f4e47961233d8ec1022b2",
+    "paper/data/strict_parts/seed_320.csv": "8214b3daf952bb10488657ab76f36e7a99db36f6f989220d6429c49865fc070e",
+    "paper/data/strict_parts/seed_320.log": "57b44a46397551bb0a674ab596913a347b7ef6522ad35424cb5808f513f57c61",
+    "paper/data/strict_parts/seed_336.csv": "3f4735e9603b197fae985287b5d3de37a051eaa44f4383830da053ffea45aad5",
+    "paper/data/strict_parts/seed_336.log": "adda14685338e7d88f9624748560352c681d2bfc185fd48fdd6f197f343e7f0f",
+    "paper/data/strict_parts/seed_352.csv": "b29f0a30ec1b8e4238816143eca1495d841608818a7d282b417c9d78a3daac26",
+    "paper/data/strict_parts/seed_352.log": "eb4d6f5e7e7f2c0ed4ebba3a7d370a827740df51d2b5d09065d0ef288d6e23a7",
+    "paper/data/strict_parts/seed_384.csv": "4970472882f451a7885e9abc2f544005e346a28403c73c9a783ee08bafeededb",
+    "paper/data/strict_parts/seed_384.log": "afd780dabccc3ef5d53473f15695c9e6b066d660080d4bc7bc6c3ada065c6e60",
+    "paper/data/strict_parts/seed_512.csv": "650b0126d92c0910b77db63bcdee7dd9ac15e7176d3d65828b5889e944640ed5",
+    "paper/data/strict_parts/seed_512.log": "33dce82be14e23288cebccce57332138d30f091fd3100e3f8ad11133e9061179",
+    "paper/data/strict_parts/seed_64.csv": "259e1591ed7f3f79a83717a6b30d35398fd1b101ab3edda8973d6a62d0b2b2a1",
+    "paper/data/strict_parts/seed_64.log": "47b7320b253398ec4ab1da24e1dea0cb8abe65f4f867b036c7b68c2b555c2527",
+    "paper/data/strict_parts/seed_640.csv": "c85b5ec4fc4bb1d21e757acbcc41cb1bb40f766ea5373b87feb741dc26c6f64f",
+    "paper/data/strict_parts/seed_640.log": "06879d50e0a1cf816ea1f6e18084a36ebebfb7887ccecca0a761bbd7da3010c1",
+    "paper/data/strict_parts/seed_768.csv": "40003f59b2613d4b3f6cad282d1cfe4e3282deecf8c29c696245ce55415232a7",
+    "paper/data/strict_parts/seed_768.log": "6039962478ebdd36beb272e074047d1bc82e71ecb808088ddeb640e2023bf613",
+    "paper/data/strict_tables.csv": "f370f33f099c305ade5fbacba9ccc749f739d0aded29b388a40f15738558add7",
+    "paper/data/v6/causal_levels.log": "7510416391091c97400376bcf12bef252d47d23969f34df3c2354696e50a17a0",
+    "paper/data/v6/cond.csv": "4fb144e61e61c5c6bf3f25b338d67cfae3df57d1f12481b4fdb83010d7925284",
+    "paper/data/v6/cond_128.log": "caa2159782e73668bfbcc6295daf682b5735331226133d8ad01466ea76ed2c67",
+    "paper/data/v6/cond_16.log": "415f2a6a1383634a48a7e73474a70be76dc55701e156be9720d65dff5b147cf3",
+    "paper/data/v6/cond_32.log": "388dd89f9e508496412d45167d94281f9582aa45fbad73dce9e49e05db382c5e",
+    "paper/data/v6/cond_48.log": "e041e5e257ed6827ea6b5f79522afa0bde8a8d541de0534beae08355bb175c22",
+    "paper/data/v6/cond_96.log": "0a6cc0c30c5cf786b8ee42fbbcbac97bb81a8156736dc8361a27c3133d557827",
+    "paper/data/v6/cs_128_250.log": "311a03056f8a240fc3399e7b388a36d3a2684e077da08dd35de43ecb7b7d0c14",
+    "paper/data/v6/cs_128_350.log": "d3fc06c578cf368ebc0d0437c7de0f3c78ae9a1f760ad111ab0f8b7e06f6fb10",
+    "paper/data/v6/cs_15_60.log": "8f6af73de2ca05b617576c8ad48f9658d9c67defbf39906bb32e5448ed6fb6b2",
+    "paper/data/v6/cs_256_450.log": "57d40aa7d173175184c604144deb2b76cdfc80f36f1243817ffd48b318124b49",
+    "paper/data/v6/cs_31_60.log": "9edf868d6131df0b6a895a6722f9c1643df04b649b6f3c3190503ada8ebcfdba",
+    "paper/data/v6/cs_33_60.log": "552c53a43e12fb170573124fa4d82a0f336dcc05a2975b8d3ef79364d9c656d0",
+    "paper/data/v6/cs_63_100.log": "c8a34d120fee067a9502aab033153606c4cfd8e3666fb67dff8c21795d4f478d",
+    "paper/data/v6/cs_64_120.log": "b8686bce52551bf2bc9e711c3606fa185ad0fa3fbf2d4048aa02afdc94f519df",
+    "paper/data/v6/cs_64_220.log": "9fe9a7f05db6929c44cbeedab1ad8a36f503bf8e5466622dc78381119815dcb3",
+    "paper/data/v6/cs_7_60.log": "5371f9b9aa27b64a58bd30e74a3e3dc6f688a2f1757c4462ebaf850aa61eee84",
+    "paper/data/v6/cs_9_60.log": "241aac5aa1dc5db5e3b0f445014ebd3a3a2c1511f6024471ac1cdeecf3df7774",
+    "paper/data/v6/cslots.csv": "d67f5cdeff78bd57b345078da8693b7ba18bfe0b80b3d5618d1c8d813e21f628",
+    "paper/data/v6/cslots_r256_dps550.log": "b0e6f75618ed4e035954e3768614f224d53043218c9c1240ea4582c61e2d77a0",
+    "paper/data/v6/dft_127_250.log": "8b9d2dcce1e9935c1a6ebd77242f1d728db44c02fbcd6d505c9cd4abb75b063b",
+    "paper/data/v6/dft_127_350.log": "39619e5b879bd5763b7871b451c192120f08b9a72f5cf94cce9860fa6f86086e",
+    "paper/data/v6/dft_128_250.log": "b19a9c0ecdd8ff7f606aa8d1fd2342080e3c3ee575e356aba79e9dc7c70ef2e2",
+    "paper/data/v6/dft_128_350.log": "2cc00accb8b6bfd725e6ca6c929faecdaded0068c7a28528abfa03976f8b6189",
+    "paper/data/v6/dft_15_160.log": "4e2a2eeadd1f49f70a7b2a26a056ef4bf28b7095ed7230df985e84e0c2953efd",
+    "paper/data/v6/dft_15_60.log": "e9971718dee2008786284472d4b7c40aab006c73e5b61f70570bea7ac6c367cd",
+    "paper/data/v6/dft_16_160.log": "6cb2c5814e38dd9a76b07bd877395ad882ecec4210a9e8c3665f0e58ce1d9db7",
+    "paper/data/v6/dft_31_160.log": "3a07513107e97b42cfa1ceb0c2892898372a4b27a460d8762eb90c477de642b3",
+    "paper/data/v6/dft_31_60.log": "1c1ab2ffb424e7bed6f651adbabe99ad6d67e0d53467210af6ef7c9ff2fb5510",
+    "paper/data/v6/dft_32_160.log": "fe49bd051f1c19d6290eed07d92c4f0a9ed82f2ad1beb0a9f8ab3533fcccb78a",
+    "paper/data/v6/dft_33_160.log": "678d632c68fb6169e4cabd9d68d772e180406a6144de73990280c25488629049",
+    "paper/data/v6/dft_33_60.log": "d7895844c4b66a33c51d6cfa97b2f27d773260b307dccceadad159d68fabb59f",
+    "paper/data/v6/dft_63_100.log": "ff252c2a4ee06913b2afcadfbec41910276fa0ea5bc78c945eac453e3887d2ca",
+    "paper/data/v6/dft_63_200.log": "81ef432964129d340d44b21f26434b264bcfa42dac3c3818645311b0f8c38ef8",
+    "paper/data/v6/dft_64_120.log": "5344ec7eb1ef181f85f5c6b403328c9af92ea42659a4eb9f933c79611b1fff81",
+    "paper/data/v6/dft_64_220.log": "ef26054233393de1a1a1b28b64c58c3d3f0231a9bb83471f0cb1c0db47320fc4",
+    "paper/data/v6/dft_7_160.log": "4b2b2e33ca7f8342973c1cd91397e7bbbdc2da61cfa8aa75dd56802a1b90e10a",
+    "paper/data/v6/dft_7_60.log": "5086d129a78db72ac71a3fdb5899c1c19610166c02a1b1a2a6238054efc9f333",
+    "paper/data/v6/dft_8_160.log": "b85e7f96572c8ef86bd0841b3b47a2cdd58a6832f63d4fbb3a32eab3e4c2c2ec",
+    "paper/data/v6/dft_96_200.log": "3dedc97cc200f3dcd09fbabba8f1cb923126d37abba681637fd24696badcef38",
+    "paper/data/v6/dft_96_300.log": "0e37c0f15d872e106f3347abef9a734c895676c2c91dbf71c0813f895725b58b",
+    "paper/data/v6/dft_9_160.log": "368b968ed2cff0a114bce5e997251a48f4519714413fde69d445234df5a848f7",
+    "paper/data/v6/dft_9_60.log": "7af62d9c55bbd95443db78a720435b65c8e79dbaec703f0142f6c32972be4f4a",
+    "paper/data/v6/ex_cyclo12.log": "8ffab12e381d38bd987c5889d3ad1fe754c22c9e1729f3814c047170970f9dfe",
+    "paper/data/v6/ex_cyclo15.log": "94dd827fc956618f9a2fe35eb2626c97be2a43e9214b4738ae333272ad0d0cf9",
+    "paper/data/v6/ex_cyclo16.log": "29cf272e877ade1e129b918dae87739e5d65696ee5aaf22a03d7ff8abcb873ef",
+    "paper/data/v6/ex_cyclo16cs.log": "266e660b5cac2dddf18510bd3bfe365bf262bcd8fccecdf5b8a84029462f2c91",
+    "paper/data/v6/ex_cyclo32.log": "a7ae5a535ed81637a30727feb47c1b4fa4a89223f2ee49ebd022e3c85260e4de",
+    "paper/data/v6/ex_cyclo4.log": "babf18bca33720b0605211497b3589a23cf4c61b43f1e6a09b80e5f81c682ff9",
+    "paper/data/v6/ex_cyclo4cs.log": "7795955e2bca166a186280495666e25398e4debdbe8b048dacb6f93714e1eab6",
+    "paper/data/v6/ex_cyclo7.log": "46ba4e5d91b100fab9beaff1b2e374af31abb6113301516197b24e7d34c904ba",
+    "paper/data/v6/ex_cyclo8.log": "4c4cb32bcdc483b978fe003dc0a1e8b02dcf6dfc369ee2e44c1d59efaf4702ec",
+    "paper/data/v6/ex_cyclo8cs.log": "27331251e2dd6f31029f8dd549941d02990a82661420709330471b092e0479a1",
+    "paper/data/v6/ex_cyclo9.log": "b8ff50a308a710858e094f0f355c3a770e9d72353dfb171586534e0a08e35ae7",
+    "paper/data/v6/ex_p1024.log": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "paper/data/v6/ex_p127.log": "df0583725926dbdeb1956847186f908c7c7e8196949df2c67e5f4adef92d94c8",
+    "paper/data/v6/ex_p128.log": "e8cf039f0ffd17ca469a58480cbfcd8c6ecc7bf5a84b302230069c99ec2dfd43",
+    "paper/data/v6/ex_p128cs.log": "e285cb2b3cfb9ca2b92250adb701d80cf6bba88ebdb5ddae6fe764331ba8fb0e",
+    "paper/data/v6/ex_p15.log": "b1ed51064a48a12a402673b892ca5ee2b18ec8b9e7105c3a7881b979beeaef97",
+    "paper/data/v6/ex_p16.log": "819153f27b8f35dc303f288a706f8ecd9ab79ab9cd2494bf884cb22c9859adb7",
+    "paper/data/v6/ex_p16cs.log": "df5ac70459dc964d5564e6220bbdbb072437b5b473f94001f2bb1eb9e386d236",
+    "paper/data/v6/ex_p255.log": "b45ddb642bad66a5194b99c833d2435237780b5ec88c55c4fc3e033820da5060",
+    "paper/data/v6/ex_p256.log": "576639d1c0320c42d097f617612be03ed8d7dc15c3c5eb838f95a6462dbdb9a0",
+    "paper/data/v6/ex_p31.log": "228444695a269dd43d4a99de0beaf86dbb4d3992f48126317f666a58f81145dd",
+    "paper/data/v6/ex_p31cs.log": "a562aadc55e1860485887b53865e92c2006c41f5665731a04ee5e06c52c25ed2",
+    "paper/data/v6/ex_p32.log": "f5f03bb18197aa0f167db3f9d6986e4d93e380cb2805fcd4507ae3a5e9576788",
+    "paper/data/v6/ex_p32cs.log": "daa1b848408dfc37dc722a6e51354d4f8a398638cd9c1d36423fc0e49ecd4b85",
+    "paper/data/v6/ex_p33.log": "c04f1776d1d9c2ac57609e73d6868a2bb1cdc2db162340a3726ac78fdbf4f8a4",
+    "paper/data/v6/ex_p33cs.log": "2a0ff83e9d5a12c15d7e33ada84acfb1ed7d6d11b342a2f43b5ecc57bba1245b",
+    "paper/data/v6/ex_p512.log": "4e54decd493e701c81f6ba4df82c6516458e4453516c70df17ec8bcedf453824",
+    "paper/data/v6/ex_p63.log": "c1016b8ae49a9f4c28ad77bb8714a42d22809838b3a215014edfad40f0095d90",
+    "paper/data/v6/ex_p64.log": "187d69f7de875defe519a6d76636d150cfac2c3785cd72fd0dfbf885e14e9412",
+    "paper/data/v6/ex_p64cs.log": "f5d3de02c0c9ed7b5663fb664f0dec203ede5dd842b98ada7db666d7e7b80ccf",
+    "paper/data/v6/ex_p9.log": "c0391d6c6c25e46a65a223a9e606427745744cc7d2b26e71845f82b839a29bad",
+    "paper/data/v6/exact.csv": "2734309148f56e1ae0a5eec0d6c597e40e75d78d7ef80257f53dfaf07c887ffb",
+    "paper/data/v6/mp_dft.csv": "26bb6f9f5c99c5c0a2c9a964bf91938730b605d4046de8730713bc255dd9d022",
+    "paper/data/v6/phase_precision.log": "8ba8189aeab0b323646d93f0d16bbbd7db7c826c067aad2783574c60895f0f64",
+    "paper/data/v6/stage_128.log": "6ce5d017a2d12e1c410baf5dbdeafe585684207cc2429b55eaba6e28d9e570f5",
+    "paper/data/v6/stage_32.log": "5b81ac7edc70e537851226db8b04f7cdfaffc1a10f7cb09b8ab90d78347c629a",
+    "paper/data/v6/stage_64.log": "75dbd12130145f0a4703553fafa61b73dcf845f7929972460139ad110533a045",
+    "paper/data/v6/stagewise.csv": "98539feaf81923bd6a3774358b1ed3d1f840dac5fa0330437b87fbf4b8d6f9dd",
+    "paper/data/v6/timing.log": "17a7be06d9aabf061384776101929fdbfc7b9c829840fadeeedeac246d7a895c",
+    "paper/data/v6/toe_1024_600.log": "27fad0bf73e103799c7bb09f39b0d16751148a6dac4e653da062f197a26d948c",
+    "paper/data/v6/toe_1024_700.log": "ec88acf2cbe088693e540158cf31e2797d9ff0d0eea0e22ff62b511397a818e7",
+    "paper/data/v6/toe_352_300.log": "eac7133d4da5cbc086a0eb60222a38c18f0fe1a13a10a85d870b28574435e47d",
+    "paper/data/v6/toe_352_400.log": "cd8cba97fd013317941e9cde059fa0d3d9f7fe8c6e89d5a93fdfe6400d60dd06",
+    "paper/data/v6/toe_640_400.log": "b78e236dc844bf5f0e4287892abee0a44b2741a738faf1cb11bec88c3bc05ad3",
+    "paper/data/v6/toe_640_500.log": "df78037a97d3468d7816012035a25ad8d0b15f1dd2d33698f64e7a49ddcc5eff",
+    "paper/data/v6/toeplitz.csv": "133c1f409e3292164269c9007eaa85a444f028e54801e9df2d8de344c927716c",
+    "paper/data/v6/topo_1024.csv": "25eb174b0d376320a983e88fd31ef16ecba10d4bd7a9af6166d5cba624aee669",
+    "paper/data/v6/topo_1024.log": "b9add318ac28e0b692a88b6e0c6ddcff46c64988f343763a03a5c491a35aaa6e",
+    "paper/data/v6/topo_128.csv": "9c2988c28b9b5c387151395b5d4ec43abd730e6244a4ee6c15747059087713ba",
+    "paper/data/v6/topo_128.log": "dc9dbf5bab7193891a8e291d1fa0f1be7ceb81649ef4e3e5c03119639116ad02",
+    "paper/data/v6/topo_256.csv": "6ba13567dce8dbff51a9eb5a7174a75fa01f843415f5e403b6826f5a099da396",
+    "paper/data/v6/topo_256.log": "9fe2e3bae6c397e054f04a6af84fed9b44bc59a6f62cf57ff3c934bf95c67a48",
+    "paper/data/v6/topo_288.csv": "4b3719245690630d609797700199b823fa19f328ab833041a729074f4d0c3c35",
+    "paper/data/v6/topo_288.log": "10777ec56a277d6077fbfea1f88279428482ade761577a9427b21c1138dde6a5",
+    "paper/data/v6/topo_320.csv": "09104cb3c5ab86af617d441227b9f7215b242a1d736210b4fe12db57baf49581",
+    "paper/data/v6/topo_320.log": "283ef5a193dcce5107b112914d1c5886b789d34071f04525a3addf8dfa4589f5",
+    "paper/data/v6/topo_336.csv": "2748b5bcfe260c9dbe8244fe7d4c5f946cfb1d9e585c1661987f32c196a1b861",
+    "paper/data/v6/topo_336.log": "7cb742819b44832999ff284f8f10c939b0c07491b4a05fa65d73555d0586356a",
+    "paper/data/v6/topo_352.csv": "075f156ecc2a574709156be12a3c06dcf7366959d059ab6c417334a0629832e7",
+    "paper/data/v6/topo_352.log": "8c09153683c9453e6b131b2f18d593be988ea465c0f983f5d3128a9c4cd9d338",
+    "paper/data/v6/topo_384.csv": "10f441b3b901463065b33f97c452327945d9eb42326e14e70ef7624ba3453312",
+    "paper/data/v6/topo_384.log": "92925a37da9ff272d06b0de45e0e866403ceef5d2bfc87624a731af7d74e6201",
+    "paper/data/v6/topo_512.csv": "77dc20eb1327d0f62a0ecf21f2a320fb94d18744f686a0d2493cf29ee60f66ae",
+    "paper/data/v6/topo_512.log": "d9e051836ba7d8eae2f188637fc49df785665834690d10e00616520b0d04ad34",
+    "paper/data/v6/topo_64.csv": "8ec08f996f44d72c1f255940ac43657bf32dc0330161d57f1e156fecf901004f",
+    "paper/data/v6/topo_64.log": "27feb4fe9f206749c66c1569c3b587350a650dd3463dd5a3fbad0bd1112b9dcf",
+    "paper/data/v6/topo_640.csv": "0c0af1eb91e42623125f7b3d2171626d54127e1538048a50978e987163f35169",
+    "paper/data/v6/topo_640.log": "60443a1ea236d4327fe09cb706f02e54fec5747fe64d9ad3222543a28ed0330c",
+    "paper/data/v6/topo_768.csv": "5e605b0729b295cb83509152c4846c6f0854a0debb21b59eac505b2b62e95a02",
+    "paper/data/v6/topo_768.log": "917726b5520bb04018526b529f411f9dee416e8283c8c45a6c6f7ee2f4343144",
+    "paper/data/v6/topology.csv": "841ee5110f338f7621174fdb1dc778b26e8cd4222001e0f9952e90b82e6c6216",
+    "paper/scripts/asap_tables.py": "976965dc2bf75a93d1ff7c79a2d11484a1fefa766b5af44cfff6c357a3cbe637",
+    "paper/scripts/build_gate_table.py": "33696cac8aaf8944328f6add3b069cd0672077bb173f03913d72ac3cc5f05458",
+    "paper/scripts/build_html.py": "8082e560b63e8bd1c7f16b2382da6e48f0b04daf7d122cd837366313379da1c6",
+    "paper/scripts/build_pdf.sh": "a3296c4a1af91cb22af40698850c7cb9f1062a182569bd04993cb3807ad43826",
+    "paper/scripts/causal_levels.py": "dbbeeb398254e2b3e01a7bc9647e7c4448a1bf5ef11be9e0cfc60b7aa70fbc6f",
+    "paper/scripts/collect_v6.py": "e13f12fc79e41a6dc0fbf58f51a044b0ef463017ff040b56b461a519f136ae6f",
+    "paper/scripts/cond_T.py": "5d0bac034a9b36443a8cdba946ac8c4d7f6a2038e2d774a47ffe636dbcc12447",
+    "paper/scripts/depth_exact_rule.py": "e725d17e3673b2eae2ab44b86f9888a78d9febe6796e05e05574c0f4482fd3b9",
+    "paper/scripts/exact_check_dft.py": "8f3b14d322a328e0a902dad2b0abb2d7b4cc3e1223200c02081e1c8de74a50d4",
+    "paper/scripts/make_figures.py": "6cece6f4ed7ac0027b7a96d43ba2575f779dc13cfa3ab1dfbb3ab672c132a8a7",
+    "paper/scripts/measure_chunk1_depth_1024.py": "6f58048e9b6c33c822543e0fcd5f18d9b5ba95d603e43a009a19d167456d3a45",
+    "paper/scripts/mp_check_cslots.py": "75c10df86d03030e9fd97c37c6ce2161a5159559cac60d6628cf92e03a6c8ce4",
+    "paper/scripts/mp_check_dft.py": "4722740ee31c4e9222340ace7dd1e45e34a46a593f13bb6af0f6bb433c2ddfc0",
+    "paper/scripts/mp_check_toeplitz.py": "e4636559ddb498fac5ec1cb366a63cae7e788ab6282c5cd80ab01d98f010224f",
+    "paper/scripts/mp_check_toeplitz_stream.py": "3f5fd9cd1fda4f9ffac44782d3f6c1c7f5aa46c8bd70dc0e5e592928a13b0e17",
+    "paper/scripts/mp_check_uniform.py": "1b3a3a6581ac22514ae37ae19efca1c8c2b9e47e62cf4c080ed0a84fd1082e8d",
+    "paper/scripts/phase_precision.py": "7935de9a00a951b68fbb75de5ce5200bf0724c5e418ded35d2d0172bc4bebf53",
+    "paper/scripts/reproduce.py": "7f90780b3c2b38b219baf422f840bfafbafe723b74fbbfdda4f6edc8f21d2bc2",
+    "paper/scripts/roots_h.py": "d3742d6de8caecce250c527458807767a5a1a5e1234505f6aaa24ea7febe01b4",
+    "paper/scripts/rounds_check.py": "26636a7d15dfa4fdc93f4b0e79bd6d6b1d6ced9134d3bad75a8cbc1c936bee81",
+    "paper/scripts/seed_sweep.py": "546528685fab2e79b8df0be4d4d24b63ebc706a74514f5cba83794faa5cd4292",
+    "paper/scripts/stagewise.py": "c65b6487dd0aa8cdfd98321bafd62f47110ebe5bf195016306e5fec9a150793d",
+    "paper/scripts/strict_tables.py": "556d6e6f797c9ab44439e85f196b1bd03a2057dcb14a292dd2b9ff7be7edbb22",
+    "paper/scripts/timing.py": "dcf1c3d1aee26ac466a6eeb7f4633f152dcee9212f0ee5fd20ee884cf57edf5f",
+    "paper/scripts/topology_audit.py": "1542dd2736a8be035a5cbe9c2d401f9d9dabe8892c16c51e963009772b496e90",
+    "paper/scripts/verify_tables.py": "3305b2f19b9cdb4d7f3a27e40d3d5f83d755aac43680e6f59b5c3e0bd58eb0ac",
+    "precision_control.py": "42f851d29732176ecc2404f0f3e17160101936c4d8822089343d320f9baf8b1e",
+    "run_lab.py": "cb430984bb80b6b5fec87b7002607978ab12130f53de333bc214076df79f28fe",
+    "signals.py": "f1455a8adc82a8a67fb71f284854fd2acbfe9b9992747215b3880fa6563e31f4",
+    "tests/test_allength.py": "d2ad2fa3beda6823f5b59f6d806f632d9fc4d485aa09061b7fbee2d39cd5c10f",
+    "tests/test_assembly.py": "e0edd61cea09ddb5379985145d94160e15af439de8d1cff56aaccbf7743ef641",
+    "tests/test_batching.py": "2301c7cb00e3bc076191f9e6aebb1d3974492228d70a85c6a954e5d7d4858282",
+    "tests/test_collect_results.py": "55a167bf3742f21e384e9cc3f555c65e0a2ee3e977c7b36aa9f11b010510dfc5",
+    "tests/test_compiler.py": "2e606b22b5c0081446af78159061c5fe1936d9fadf8ac6524103c10e7ecc3045",
+    "tests/test_conv_dag.py": "1f7e71254482d9d8332e8161dec55855f50d01407f098d20ebf16624b572d32a",
+    "tests/test_edge_kernels.py": "8b86df01728cc372c269b424b8e8cd55c46815c0ba838d61eecd7a296714edc3",
+    "tests/test_exact_field.py": "b731ead395a19a7909e36bd9748cc66c875d99c874c1ad5f8fc71a770995a198",
+    "tests/test_exact_width.py": "55169e83b053c3ccff8d062a9653b956c3c51f345810ed27270f077bc284b8cd",
+    "tests/test_frame_mod4.py": "0c3e8e3e5d711bcaf25deff23814fceed8ac56ab478bfa8d7a4bab3e0a9103e2",
+    "tests/test_indexing.py": "a4549fe7fa7a00162d9a81e5b0bbceb0ab8ec453b8ddfd5d3df4b6f1efc9cb56",
+    "tests/test_lab.py": "96a876f26bdcbab6afb21a83f8a72b52c28abce49d2432bb1fff0312ffce318d",
+    "tests/test_mp_compiler.py": "ac32aaa80ed0a9007c89751e2ca24b19e7ffe8539ac5c84bb892aa07c9dbba36",
+    "tests/test_mp_exact.py": "704a948ea21f7740dd6c59acd8ecfd70c008e6287663bd0a3092e8c4d6d55eb1",
+    "tests/test_network_small.py": "9d2cc07050253c6db7fa84916ffa525f3bff4f2dff69e7bb478ee35539ed2355",
+    "tests/test_newton_local.py": "e31d5f9aab1666832ffddac5d0b37a5f38c50f5daf0fd629c9ff2c538f7a6fd1",
+    "tests/test_packing.py": "7a59f10dbe0f9876c35481a3b7973e754943bde4f3dfafd9a4388800b96fc322",
+    "tests/test_phase_precision.py": "c878fbf7e105a556e5fcc8be44f819bb582e72bc4d0022e2c858efc3ab646ec0",
+    "tests/test_precision.py": "4202bc0cea64ff90ae767416b193e9303be0802b0a8eb741d93d3d3fadddf878",
+    "tests/test_printer.py": "ff7ef4abbb6741bf0992f9b390e6ea454a5405cec50a4c5af1d023e516d9ff71",
+    "tests/test_replay.py": "b44bf2332ca89aadb395d756404f69fe9937d0fb8f25736138292e0a019ae10a",
+    "tests/test_reproduce_runner.py": "cfbb9e8da5ccf4d5295d611e9d5ddf484f9b93c8e5182f2b0e72486b61a28af4",
+    "tests/test_reproduction_verifier.py": "87e90d541d54d82975eac487dfe703566ddf5e27e89e3d397100870a6914f3ce",
+    "tests/test_subspace_decomp.py": "677c6e2b1f435550731baee38e42ead962ff4b218ca895c372b0d6d0bf51f9f5",
+    "tests/test_tensor_sync.py": "1e1ddd43766cd8f1347c8e04f3d04da9717f6704f6c87d0c1f7aa9843dbea643",
+    "tests/test_three_call.py": "910c34922a509dbf5e0ef4e31e51cb10c321e944ee4416a6ebed16b56b465bea",
+    "tests/test_toeplitz_disp.py": "ef1b9bb3a4d007133ab5e343390dcbbe208b392f84da5989620313077848a869",
+    "tests/test_zero_free.py": "fd6fe2fd58378291f095cddfabbb11c913a01505e72af14343bdb807f6fd2ee5"
+  },
+  "plan": {
+    "mode": "full",
+    "jobs": [
+      {
+        "name": "tests",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests"
+        ],
+        "outputs": []
+      },
+      {
+        "name": "gate-table",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/build_gate_table.py"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/data/gate_count_table_b_le_1024.pkl"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "gate-table_strict",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/build_gate_table.py",
+          "--strict"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/data/gate_count_table_b_le_1024_strict.pkl"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-cyclo-4",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "4",
+          "cyclo"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-cyclo-7",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "7",
+          "cyclo"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-cyclo-8",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "8",
+          "cyclo"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-cyclo-9",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "9",
+          "cyclo"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-cyclo-12",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "12",
+          "cyclo"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-cyclo-15",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "15",
+          "cyclo"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-cyclo-16",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "16",
+          "cyclo"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-cyclo-32",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "32",
+          "cyclo"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-cyclo-cslots-4",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "4",
+          "cyclo",
+          "--cslots"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-cyclo-cslots-8",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "8",
+          "cyclo",
+          "--cslots"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-cyclo-cslots-16",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "16",
+          "cyclo",
+          "--cslots"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-9",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "9",
+          "prime",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-15",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "15",
+          "prime",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-16",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "16",
+          "prime",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-31",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "31",
+          "prime",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-32",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "32",
+          "prime",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-33",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "33",
+          "prime",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-63",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "63",
+          "prime",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-64",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "64",
+          "prime",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-127",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "127",
+          "prime",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-128",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "128",
+          "prime",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-255",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "255",
+          "prime",
+          "2",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-256",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "256",
+          "prime",
+          "2",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-512",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "512",
+          "prime",
+          "2",
+          "2"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-cslots-16",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "16",
+          "prime",
+          "1",
+          "0",
+          "--cslots"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-cslots-31",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "31",
+          "prime",
+          "1",
+          "0",
+          "--cslots"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-cslots-32",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "32",
+          "prime",
+          "1",
+          "0",
+          "--cslots"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-cslots-33",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "33",
+          "prime",
+          "1",
+          "0",
+          "--cslots"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-cslots-64",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "64",
+          "prime",
+          "1",
+          "0",
+          "--cslots"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "exact-prime-cslots-128",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/exact_check_dft.py",
+          "128",
+          "prime",
+          "1",
+          "2",
+          "--cslots"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-7-60",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "7",
+          "60",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-7-160",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "7",
+          "160",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-8-60",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "8",
+          "60",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-8-160",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "8",
+          "160",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-9-60",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "9",
+          "60",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-9-160",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "9",
+          "160",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-15-60",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "15",
+          "60",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-15-160",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "15",
+          "160",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-16-60",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "16",
+          "60",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-16-160",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "16",
+          "160",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-31-60",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "31",
+          "60",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-31-160",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "31",
+          "160",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-32-60",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "32",
+          "60",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-32-160",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "32",
+          "160",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-33-60",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "33",
+          "60",
+          "3",
+          "--basis"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-33-160",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "33",
+          "160",
+          "3",
+          "--basis"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-63-100",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "63",
+          "100",
+          "3",
+          "--basis"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-63-200",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "63",
+          "200",
+          "3",
+          "--basis"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-64-120",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "64",
+          "120",
+          "3",
+          "--basis"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-64-220",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "64",
+          "220",
+          "3",
+          "--basis"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-96-200",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "96",
+          "200",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-96-300",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "96",
+          "300",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-127-250",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "127",
+          "250",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-127-350",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "127",
+          "350",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-128-250",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "128",
+          "250",
+          "3",
+          "--basis"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-128-350",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "128",
+          "350",
+          "3",
+          "--basis"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-256-450",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "256",
+          "450",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "dft-256-550",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "256",
+          "550",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "cslots-7-60",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_cslots.py",
+          "7",
+          "60",
+          "3",
+          "--basis",
+          "--conj-dag"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "cslots-9-60",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_cslots.py",
+          "9",
+          "60",
+          "3",
+          "--basis",
+          "--conj-dag"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "cslots-15-60",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_cslots.py",
+          "15",
+          "60",
+          "3",
+          "--basis",
+          "--conj-dag"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "cslots-31-60",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_cslots.py",
+          "31",
+          "60",
+          "3",
+          "--basis",
+          "--conj-dag"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "cslots-33-60",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_cslots.py",
+          "33",
+          "60",
+          "3",
+          "--basis",
+          "--conj-dag"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "cslots-63-100",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_cslots.py",
+          "63",
+          "100",
+          "3",
+          "--basis",
+          "--conj-dag"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "cslots-64-120",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_cslots.py",
+          "64",
+          "120",
+          "3",
+          "--basis",
+          "--conj-dag"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "cslots-64-220",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_cslots.py",
+          "64",
+          "220",
+          "3",
+          "--basis",
+          "--conj-dag"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "cslots-128-250",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_cslots.py",
+          "128",
+          "250",
+          "3",
+          "--conj-dag"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "cslots-128-350",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_cslots.py",
+          "128",
+          "350",
+          "3",
+          "--conj-dag"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "cslots-256-450",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_cslots.py",
+          "256",
+          "450",
+          "1",
+          "--conj-dag"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "cslots-256-550",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_cslots.py",
+          "256",
+          "550",
+          "1",
+          "--conj-dag"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "float64-8",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "8",
+          "0",
+          "6",
+          "--float"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "float64-16",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "16",
+          "0",
+          "6",
+          "--float"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "float64-24",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "24",
+          "0",
+          "6",
+          "--float"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "float64-32",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "32",
+          "0",
+          "6",
+          "--float"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "float64-48",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "48",
+          "0",
+          "6",
+          "--float"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "float64-64",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "64",
+          "0",
+          "6",
+          "--float"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "float64-96",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_dft.py",
+          "96",
+          "0",
+          "6",
+          "--float"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "stage-32",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/stagewise.py",
+          "32",
+          "60",
+          "--cond"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "stage-64",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/stagewise.py",
+          "64",
+          "120",
+          "--cond"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "stage-128",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/stagewise.py",
+          "128",
+          "250"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "causal-32",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/causal_levels.py",
+          "32",
+          "40"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "causal-64",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/causal_levels.py",
+          "64",
+          "60"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "causal-128",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/causal_levels.py",
+          "128",
+          "100"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "phase-64-tword",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/phase_precision.py",
+          "64",
+          "50",
+          "--stage",
+          "tword",
+          "--output-json",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/phase-64-tword.json"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/phase-64-tword.json"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "phase-64-word",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/phase_precision.py",
+          "64",
+          "50",
+          "--stage",
+          "word",
+          "--output-json",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/phase-64-word.json"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/phase-64-word.json"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "phase-128-tword",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/phase_precision.py",
+          "128",
+          "90",
+          "--stage",
+          "tword",
+          "--output-json",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/phase-128-tword.json"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/phase-128-tword.json"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "phase-128-word",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/phase_precision.py",
+          "128",
+          "90",
+          "--stage",
+          "word",
+          "--output-json",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/phase-128-word.json"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/phase-128-word.json"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "cond-16",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/cond_T.py",
+          "16",
+          "60"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "cond-32",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/cond_T.py",
+          "32",
+          "80"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "cond-48",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/cond_T.py",
+          "48",
+          "100"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "cond-96",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/cond_T.py",
+          "96",
+          "160"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "cond-128",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/cond_T.py",
+          "128",
+          "200"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "toeplitz-352-300",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_toeplitz.py",
+          "352",
+          "300",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "toeplitz-352-400",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_toeplitz.py",
+          "352",
+          "400",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "toeplitz-640-400",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_toeplitz_stream.py",
+          "640",
+          "400",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "toeplitz-640-500",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_toeplitz_stream.py",
+          "640",
+          "500",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "toeplitz-1024-600",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_toeplitz_stream.py",
+          "1024",
+          "600",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "toeplitz-1024-700",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/mp_check_toeplitz_stream.py",
+          "1024",
+          "700",
+          "3"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "roots",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/roots_h.py"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "strict-64",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/strict_tables.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-64.csv",
+          "64"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-64.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "topology-64",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/topology_audit.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-64.csv",
+          "64"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-64.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "strict-128",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/strict_tables.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-128.csv",
+          "128"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-128.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "topology-128",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/topology_audit.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-128.csv",
+          "128"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-128.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "strict-256",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/strict_tables.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-256.csv",
+          "256"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-256.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "topology-256",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/topology_audit.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-256.csv",
+          "256"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-256.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "strict-288",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/strict_tables.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-288.csv",
+          "288"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-288.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "topology-288",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/topology_audit.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-288.csv",
+          "288"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-288.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "strict-320",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/strict_tables.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-320.csv",
+          "320"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-320.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "topology-320",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/topology_audit.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-320.csv",
+          "320"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-320.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "strict-336",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/strict_tables.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-336.csv",
+          "336"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-336.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "topology-336",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/topology_audit.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-336.csv",
+          "336"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-336.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "strict-352",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/strict_tables.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-352.csv",
+          "352"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-352.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "topology-352",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/topology_audit.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-352.csv",
+          "352"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-352.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "strict-384",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/strict_tables.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-384.csv",
+          "384"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-384.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "topology-384",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/topology_audit.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-384.csv",
+          "384"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-384.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "strict-512",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/strict_tables.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-512.csv",
+          "512"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-512.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "topology-512",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/topology_audit.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-512.csv",
+          "512"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-512.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "strict-640",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/strict_tables.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-640.csv",
+          "640"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-640.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "topology-640",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/topology_audit.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-640.csv",
+          "640"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-640.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "strict-768",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/strict_tables.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-768.csv",
+          "768"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-768.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "topology-768",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/topology_audit.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-768.csv",
+          "768"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-768.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "strict-1024",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/strict_tables.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-1024.csv",
+          "1024"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-1024.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "topology-1024",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/topology_audit.py",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-1024.csv",
+          "1024"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-1024.csv"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "depth-model",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/depth_exact_rule.py",
+          "--strict"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "rounds",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/rounds_check.py"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "timing-64",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/timing.py",
+          "64"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "timing-128",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/timing.py",
+          "128"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "timing-256",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/timing.py",
+          "256"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "timing-512",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/timing.py",
+          "512"
+        ],
+        "outputs": [],
+        "output_dirs": []
+      },
+      {
+        "name": "collect",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/collect_v6.py",
+          "--log-dir",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw",
+          "--output-dir",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data"
+        ],
+        "outputs": [],
+        "output_dirs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data"
+        ]
+      },
+      {
+        "name": "verify",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/verify_tables.py",
+          "--data-dir",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data",
+          "--mode",
+          "full",
+          "--output-json",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/verification.json"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/verification.json"
+        ],
+        "output_dirs": []
+      },
+      {
+        "name": "figures",
+        "argv": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+          "paper/scripts/make_figures.py",
+          "--data-dir",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data",
+          "--fig-dir",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures"
+        ],
+        "outputs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig1_depth.png",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig1_depth.pdf",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig2_cost.png",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig2_cost.pdf",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig3_log4_law.png",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig3_log4_law.pdf",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig4_tradeoff_r512.png",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig4_tradeoff_r512.pdf",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig5_precision.png",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig5_precision.pdf",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig6_stagewise.png",
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig6_stagewise.pdf"
+        ],
+        "output_dirs": [
+          "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures"
+        ]
+      }
+    ],
+    "omitted": [],
+    "archived_references": [
+      "v4 zero-pruned comparison curves in figures (labelled historical)"
+    ]
+  },
+  "jobs": {
+    "tests": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests"
+      ],
+      "started": "2026-10-13T20:27:31.783565+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T20:27:50.947260+00:00",
+      "seconds": 19.16107528898283,
+      "log_sha256": "bdd476ffe9baa0ab8f6d2abaed20b842184d779850407bbda810d06383ef76df",
+      "output_sha256": {}
+    },
+    "gate-table": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/build_gate_table.py"
+      ],
+      "started": "2026-10-13T20:27:50.948165+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T20:40:22.919860+00:00",
+      "seconds": 751.9690057939733,
+      "log_sha256": "ec7631a878f2883c488809776a3b609e7d374d357b40cab70af604e3063fc2ee",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/data/gate_count_table_b_le_1024.pkl": "2226ec9c434f2319eae52078631c2013097e5f42385dcb308ddf051940d22cb4"
+      }
+    },
+    "gate-table_strict": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/build_gate_table.py",
+        "--strict"
+      ],
+      "started": "2026-10-13T20:40:22.920759+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T20:52:36.087975+00:00",
+      "seconds": 733.1644796590263,
+      "log_sha256": "de7eb74504b7048f697d1454e000680cd6675bbd86c5d3915c251a13d4dd72eb",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/source/data/gate_count_table_b_le_1024_strict.pkl": "4bca7ceb7e24fd0956b9a16b3a155f666b21fcb6f3888bbc8d158b2bce9d8066"
+      }
+    },
+    "exact-cyclo-4": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "4",
+        "cyclo"
+      ],
+      "started": "2026-10-13T20:52:36.088849+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T20:52:36.215425+00:00",
+      "seconds": 0.12515252901357599,
+      "log_sha256": "babf18bca33720b0605211497b3589a23cf4c61b43f1e6a09b80e5f81c682ff9",
+      "output_sha256": {}
+    },
+    "exact-cyclo-7": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "7",
+        "cyclo"
+      ],
+      "started": "2026-10-13T20:52:36.216273+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T20:52:36.524857+00:00",
+      "seconds": 0.30707925799652,
+      "log_sha256": "46ba4e5d91b100fab9beaff1b2e374af31abb6113301516197b24e7d34c904ba",
+      "output_sha256": {}
+    },
+    "exact-cyclo-8": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "8",
+        "cyclo"
+      ],
+      "started": "2026-10-13T20:52:36.525668+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T20:52:36.690349+00:00",
+      "seconds": 0.1620605360076297,
+      "log_sha256": "4c4cb32bcdc483b978fe003dc0a1e8b02dcf6dfc369ee2e44c1d59efaf4702ec",
+      "output_sha256": {}
+    },
+    "exact-cyclo-9": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "9",
+        "cyclo"
+      ],
+      "started": "2026-10-13T20:52:36.691197+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T20:52:37.621808+00:00",
+      "seconds": 0.9278568239824381,
+      "log_sha256": "55191f843ea3edb53e78f0884674c88f24c1b79fb76540f37a1ec536cc94dbb2",
+      "output_sha256": {}
+    },
+    "exact-cyclo-12": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "12",
+        "cyclo"
+      ],
+      "started": "2026-10-13T20:52:37.622678+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T20:52:41.415423+00:00",
+      "seconds": 3.789979522000067,
+      "log_sha256": "f43d533416a85346a98dd4164516713c312548c84f609ec0b9bf75e08d4795fa",
+      "output_sha256": {}
+    },
+    "exact-cyclo-15": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "15",
+        "cyclo"
+      ],
+      "started": "2026-10-13T20:52:41.416345+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T20:53:18.890144+00:00",
+      "seconds": 37.47235252900282,
+      "log_sha256": "d59df4eabb8cf758660e726df41d25914c574a1348d29267cb222e8744e32ed2",
+      "output_sha256": {}
+    },
+    "exact-cyclo-16": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "16",
+        "cyclo"
+      ],
+      "started": "2026-10-13T20:53:18.891114+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T20:53:23.939868+00:00",
+      "seconds": 5.046099453989882,
+      "log_sha256": "4a4a929c1e593d90fe7a5899e902443b585d5176a78507945ee378ec863edb31",
+      "output_sha256": {}
+    },
+    "exact-cyclo-32": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "32",
+        "cyclo"
+      ],
+      "started": "2026-10-13T20:53:23.940913+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T20:55:29.334955+00:00",
+      "seconds": 125.39142802302376,
+      "log_sha256": "c6cbb401627b8d9324de2525e663e8bd07f233a069494bc7753d180d0c846392",
+      "output_sha256": {}
+    },
+    "exact-cyclo-cslots-4": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "4",
+        "cyclo",
+        "--cslots"
+      ],
+      "started": "2026-10-13T20:55:29.335852+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T20:55:29.532436+00:00",
+      "seconds": 0.19392062301631086,
+      "log_sha256": "7795955e2bca166a186280495666e25398e4debdbe8b048dacb6f93714e1eab6",
+      "output_sha256": {}
+    },
+    "exact-cyclo-cslots-8": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "8",
+        "cyclo",
+        "--cslots"
+      ],
+      "started": "2026-10-13T20:55:29.533235+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T20:55:30.832877+00:00",
+      "seconds": 1.2969052759872284,
+      "log_sha256": "d61e4a0d2154597c09bc1638a6cc31bb2a90159942701199a769151052d9d398",
+      "output_sha256": {}
+    },
+    "exact-cyclo-cslots-16": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "16",
+        "cyclo",
+        "--cslots"
+      ],
+      "started": "2026-10-13T20:55:30.833772+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:01:22.759292+00:00",
+      "seconds": 351.9241957709892,
+      "log_sha256": "35a8b90fac270a8db909dd92255e35cbd6865193b13ebf574fb05e6318b32f96",
+      "output_sha256": {}
+    },
+    "exact-prime-9": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "9",
+        "prime",
+        "3"
+      ],
+      "started": "2026-10-13T21:01:22.760268+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:01:22.892652+00:00",
+      "seconds": 0.1298540360003244,
+      "log_sha256": "c0391d6c6c25e46a65a223a9e606427745744cc7d2b26e71845f82b839a29bad",
+      "output_sha256": {}
+    },
+    "exact-prime-15": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "15",
+        "prime",
+        "3"
+      ],
+      "started": "2026-10-13T21:01:22.893517+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:01:23.119441+00:00",
+      "seconds": 0.2232940999965649,
+      "log_sha256": "b1ed51064a48a12a402673b892ca5ee2b18ec8b9e7105c3a7881b979beeaef97",
+      "output_sha256": {}
+    },
+    "exact-prime-16": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "16",
+        "prime",
+        "3"
+      ],
+      "started": "2026-10-13T21:01:23.120293+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:01:23.357068+00:00",
+      "seconds": 0.2341307409806177,
+      "log_sha256": "819153f27b8f35dc303f288a706f8ecd9ab79ab9cd2494bf884cb22c9859adb7",
+      "output_sha256": {}
+    },
+    "exact-prime-31": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "31",
+        "prime",
+        "3"
+      ],
+      "started": "2026-10-13T21:01:23.357943+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:01:24.565517+00:00",
+      "seconds": 1.204947310994612,
+      "log_sha256": "02c620d2b2df61635dbbcf985a8ca1bc5c29b699f9e122d644444c2b79bb53a9",
+      "output_sha256": {}
+    },
+    "exact-prime-32": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "32",
+        "prime",
+        "3"
+      ],
+      "started": "2026-10-13T21:01:24.566585+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:01:25.891308+00:00",
+      "seconds": 1.3233454730070662,
+      "log_sha256": "19507fe129c50e8c7f8c972f98ec8b51645e1a5acc1dec9bc60f364c501adaee",
+      "output_sha256": {}
+    },
+    "exact-prime-33": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "33",
+        "prime",
+        "3"
+      ],
+      "started": "2026-10-13T21:01:25.892223+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:01:27.323314+00:00",
+      "seconds": 1.4284880209888797,
+      "log_sha256": "ec11d8949aa8f4f33fa389f67056593e85b17d2d415ce8cf945509582b8744c5",
+      "output_sha256": {}
+    },
+    "exact-prime-63": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "63",
+        "prime",
+        "3"
+      ],
+      "started": "2026-10-13T21:01:27.324293+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:01:37.661724+00:00",
+      "seconds": 10.334720564977033,
+      "log_sha256": "047a878550d4761cfed45c0486387b6acf95e02e7cbe7f2e30daa4ec1d2ea2f2",
+      "output_sha256": {}
+    },
+    "exact-prime-64": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "64",
+        "prime",
+        "3"
+      ],
+      "started": "2026-10-13T21:01:37.662712+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:01:48.444053+00:00",
+      "seconds": 10.778764046990545,
+      "log_sha256": "c7d656c96ef66a65ed8cf6dc6c568844ba0d18caccc5922debc66914deec3007",
+      "output_sha256": {}
+    },
+    "exact-prime-127": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "127",
+        "prime",
+        "3"
+      ],
+      "started": "2026-10-13T21:01:48.444992+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:03:16.639124+00:00",
+      "seconds": 88.19263272400713,
+      "log_sha256": "56edd51b2893939543869e4dc500b4283a4dd60ec85f2f575202632fd39e799b",
+      "output_sha256": {}
+    },
+    "exact-prime-128": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "128",
+        "prime",
+        "3"
+      ],
+      "started": "2026-10-13T21:03:16.640098+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:07:33.916876+00:00",
+      "seconds": 257.2754607349925,
+      "log_sha256": "c9e71c03d4ace4986261d7371e7961a6483d50cd6a683bd645bd8a399b0771c9",
+      "output_sha256": {}
+    },
+    "exact-prime-255": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "255",
+        "prime",
+        "2",
+        "3"
+      ],
+      "started": "2026-10-13T21:07:33.917844+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:08:09.769280+00:00",
+      "seconds": 35.85021212999709,
+      "log_sha256": "35bd84c12282163060b5b6920c95f77b9e5ed855cb46ad3499d51084116ea647",
+      "output_sha256": {}
+    },
+    "exact-prime-256": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "256",
+        "prime",
+        "2",
+        "3"
+      ],
+      "started": "2026-10-13T21:08:09.770303+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:08:50.033897+00:00",
+      "seconds": 40.26089948401204,
+      "log_sha256": "7185aab2755a8381370dc7b663472e9feca746dafafef73fddb48370ebfa00c1",
+      "output_sha256": {}
+    },
+    "exact-prime-512": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "512",
+        "prime",
+        "2",
+        "2"
+      ],
+      "started": "2026-10-13T21:08:50.034930+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:10:58.188871+00:00",
+      "seconds": 128.15115325700026,
+      "log_sha256": "630735a7a9934bc00f41fd1ef23f4d341b6844b6d53363ba27fc24d82059559e",
+      "output_sha256": {}
+    },
+    "exact-prime-cslots-16": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "16",
+        "prime",
+        "1",
+        "0",
+        "--cslots"
+      ],
+      "started": "2026-10-13T21:10:58.189850+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:11:00.412379+00:00",
+      "seconds": 2.2210336189891677,
+      "log_sha256": "360a2f0575a8ab93ef7fbf36a752fbd8238f50947447052bd558b416a2260a49",
+      "output_sha256": {}
+    },
+    "exact-prime-cslots-31": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "31",
+        "prime",
+        "1",
+        "0",
+        "--cslots"
+      ],
+      "started": "2026-10-13T21:11:00.413422+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:11:24.025484+00:00",
+      "seconds": 23.6094871989917,
+      "log_sha256": "a5c50d97eec0efbb54706c7fb8ada725809c53a03f378a1833f9e18239df2df7",
+      "output_sha256": {}
+    },
+    "exact-prime-cslots-32": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "32",
+        "prime",
+        "1",
+        "0",
+        "--cslots"
+      ],
+      "started": "2026-10-13T21:11:24.026454+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:11:48.354268+00:00",
+      "seconds": 24.325232853007037,
+      "log_sha256": "fb76f7593290ce5f1a3b3f51ac8b758aba15cee00f3b39423d935e110d4411f0",
+      "output_sha256": {}
+    },
+    "exact-prime-cslots-33": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "33",
+        "prime",
+        "1",
+        "0",
+        "--cslots"
+      ],
+      "started": "2026-10-13T21:11:48.355286+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:12:17.274466+00:00",
+      "seconds": 28.91842332397937,
+      "log_sha256": "2e5b318cded9d5eb81fb1f9f8472de4c18f82034a62fe58dcbd21c2cc7042302",
+      "output_sha256": {}
+    },
+    "exact-prime-cslots-64": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "64",
+        "prime",
+        "1",
+        "0",
+        "--cslots"
+      ],
+      "started": "2026-10-13T21:12:17.275461+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:16:01.675078+00:00",
+      "seconds": 224.39693014402292,
+      "log_sha256": "2b174438137d38468a3c8722a91af375e2d53185498da8de745da61fb7edbb15",
+      "output_sha256": {}
+    },
+    "exact-prime-cslots-128": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/exact_check_dft.py",
+        "128",
+        "prime",
+        "1",
+        "2",
+        "--cslots"
+      ],
+      "started": "2026-10-13T21:16:01.676504+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:17:49.205648+00:00",
+      "seconds": 107.52657237902167,
+      "log_sha256": "0104daee10bc204f3c66be3ff1b709f4f0186f4eb05a058de9c04187229e8091",
+      "output_sha256": {}
+    },
+    "dft-7-60": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "7",
+        "60",
+        "3"
+      ],
+      "started": "2026-10-13T21:17:49.206625+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:17:49.350235+00:00",
+      "seconds": 0.142275685997447,
+      "log_sha256": "5086d129a78db72ac71a3fdb5899c1c19610166c02a1b1a2a6238054efc9f333",
+      "output_sha256": {}
+    },
+    "dft-7-160": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "7",
+        "160",
+        "3"
+      ],
+      "started": "2026-10-13T21:17:49.351150+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:17:49.490530+00:00",
+      "seconds": 0.136746406002203,
+      "log_sha256": "4b2b2e33ca7f8342973c1cd91397e7bbbdc2da61cfa8aa75dd56802a1b90e10a",
+      "output_sha256": {}
+    },
+    "dft-8-60": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "8",
+        "60",
+        "3"
+      ],
+      "started": "2026-10-13T21:17:49.491465+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:17:49.635497+00:00",
+      "seconds": 0.1414638610149268,
+      "log_sha256": "4c985fe0b1d3058b1c8689ffd05016afcc0b0fd3b9eaa99262a2644f25a7da0f",
+      "output_sha256": {}
+    },
+    "dft-8-160": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "8",
+        "160",
+        "3"
+      ],
+      "started": "2026-10-13T21:17:49.636477+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:17:49.774183+00:00",
+      "seconds": 0.13618399400729686,
+      "log_sha256": "b85e7f96572c8ef86bd0841b3b47a2cdd58a6832f63d4fbb3a32eab3e4c2c2ec",
+      "output_sha256": {}
+    },
+    "dft-9-60": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "9",
+        "60",
+        "3"
+      ],
+      "started": "2026-10-13T21:17:49.775161+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:17:49.913645+00:00",
+      "seconds": 0.135902205016464,
+      "log_sha256": "7af62d9c55bbd95443db78a720435b65c8e79dbaec703f0142f6c32972be4f4a",
+      "output_sha256": {}
+    },
+    "dft-9-160": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "9",
+        "160",
+        "3"
+      ],
+      "started": "2026-10-13T21:17:49.914595+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:17:50.056598+00:00",
+      "seconds": 0.13931887899525464,
+      "log_sha256": "368b968ed2cff0a114bce5e997251a48f4519714413fde69d445234df5a848f7",
+      "output_sha256": {}
+    },
+    "dft-15-60": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "15",
+        "60",
+        "3"
+      ],
+      "started": "2026-10-13T21:17:50.057636+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:17:50.312515+00:00",
+      "seconds": 0.25223071497748606,
+      "log_sha256": "e9971718dee2008786284472d4b7c40aab006c73e5b61f70570bea7ac6c367cd",
+      "output_sha256": {}
+    },
+    "dft-15-160": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "15",
+        "160",
+        "3"
+      ],
+      "started": "2026-10-13T21:17:50.313634+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:17:50.593070+00:00",
+      "seconds": 0.27687113999854773,
+      "log_sha256": "4e2a2eeadd1f49f70a7b2a26a056ef4bf28b7095ed7230df985e84e0c2953efd",
+      "output_sha256": {}
+    },
+    "dft-16-60": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "16",
+        "60",
+        "3"
+      ],
+      "started": "2026-10-13T21:17:50.594016+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:17:50.871278+00:00",
+      "seconds": 0.2764978650084231,
+      "log_sha256": "ae18cf5b7803f496179ddfbaba262a35231565b0e5b74c9193993937a25eecc7",
+      "output_sha256": {}
+    },
+    "dft-16-160": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "16",
+        "160",
+        "3"
+      ],
+      "started": "2026-10-13T21:17:50.872269+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:17:51.181748+00:00",
+      "seconds": 0.3067207010171842,
+      "log_sha256": "fae217f2a0b085f3d266e9eaeb7886346a707665449075cb284837939d49eb69",
+      "output_sha256": {}
+    },
+    "dft-31-60": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "31",
+        "60",
+        "3"
+      ],
+      "started": "2026-10-13T21:17:51.182769+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:17:52.711979+00:00",
+      "seconds": 1.5267022269836161,
+      "log_sha256": "114facd4ebde5a502eedc48c6cea1c943995a9a06a1fc8556e67f19343fd47f4",
+      "output_sha256": {}
+    },
+    "dft-31-160": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "31",
+        "160",
+        "3"
+      ],
+      "started": "2026-10-13T21:17:52.713064+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:17:54.543945+00:00",
+      "seconds": 1.8282801089808345,
+      "log_sha256": "432690289661bc131df363cb017db51c9b0cf873d4d4f1ae110bfb8d05cddf3e",
+      "output_sha256": {}
+    },
+    "dft-32-60": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "32",
+        "60",
+        "3"
+      ],
+      "started": "2026-10-13T21:17:54.545027+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:17:56.212185+00:00",
+      "seconds": 1.6644862389948685,
+      "log_sha256": "b9ce1b9d9658db0ef974d3a0a82c5b116f5a6790a88dbc475937a1ebfcfd4a63",
+      "output_sha256": {}
+    },
+    "dft-32-160": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "32",
+        "160",
+        "3"
+      ],
+      "started": "2026-10-13T21:17:56.213295+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:17:58.176381+00:00",
+      "seconds": 1.9616884620045312,
+      "log_sha256": "611cbd09abacc45ae698d29ee161b1d3e835d84520a472c2c8d695edc0a12dd9",
+      "output_sha256": {}
+    },
+    "dft-33-60": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "33",
+        "60",
+        "3",
+        "--basis"
+      ],
+      "started": "2026-10-13T21:17:58.177601+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:18:00.027882+00:00",
+      "seconds": 1.847633183002472,
+      "log_sha256": "e829ac6b967d3c7c174a21f1c4f90dbb8eee7309dd0b6dfac064085ba8804e29",
+      "output_sha256": {}
+    },
+    "dft-33-160": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "33",
+        "160",
+        "3",
+        "--basis"
+      ],
+      "started": "2026-10-13T21:18:00.028926+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:18:02.184175+00:00",
+      "seconds": 2.1525012949714437,
+      "log_sha256": "024843d89e48754f574d43f5c796a0ce8e0940319249ac113c17f32c38f5d72e",
+      "output_sha256": {}
+    },
+    "dft-63-100": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "63",
+        "100",
+        "3",
+        "--basis"
+      ],
+      "started": "2026-10-13T21:18:02.185225+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:18:17.959074+00:00",
+      "seconds": 15.77308693600935,
+      "log_sha256": "463e74679c01ecfe3c77017092a64ba8a84c6bbb562dae14545fd8e89089e8ff",
+      "output_sha256": {}
+    },
+    "dft-63-200": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "63",
+        "200",
+        "3",
+        "--basis"
+      ],
+      "started": "2026-10-13T21:18:17.960177+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:18:34.818205+00:00",
+      "seconds": 16.85532273899298,
+      "log_sha256": "f43de30e28202dcbfb0c76b12a53e2d4008cea9cfb411ac17552d3ae6eeda517",
+      "output_sha256": {}
+    },
+    "dft-64-120": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "64",
+        "120",
+        "3",
+        "--basis"
+      ],
+      "started": "2026-10-13T21:18:34.819255+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:18:51.243109+00:00",
+      "seconds": 16.421189234999474,
+      "log_sha256": "deec6c0561b05fe9a90d77d8dda2b1cf5afcae9a204bb451ed305bdc9a30378d",
+      "output_sha256": {}
+    },
+    "dft-64-220": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "64",
+        "220",
+        "3",
+        "--basis"
+      ],
+      "started": "2026-10-13T21:18:51.244159+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:19:09.204154+00:00",
+      "seconds": 17.957178509008372,
+      "log_sha256": "bf6461c82db68f5a278b5dd0211397b86b6d601738454d64b7ed80ddbc6a8c3c",
+      "output_sha256": {}
+    },
+    "dft-96-200": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "96",
+        "200",
+        "3"
+      ],
+      "started": "2026-10-13T21:19:09.205352+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:19:13.638906+00:00",
+      "seconds": 4.430928410001798,
+      "log_sha256": "db9e409e79476dcf7bb3b322660ffe05aa1365f5ed610a75d52f7cbd81d3f9e3",
+      "output_sha256": {}
+    },
+    "dft-96-300": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "96",
+        "300",
+        "3"
+      ],
+      "started": "2026-10-13T21:19:13.639931+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:19:18.611964+00:00",
+      "seconds": 4.97066991898464,
+      "log_sha256": "504ac84b0e3abe99f64b0a719fa6e27dd177e90e411aea35c65c9e6e2193d73a",
+      "output_sha256": {}
+    },
+    "dft-127-250": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "127",
+        "250",
+        "3"
+      ],
+      "started": "2026-10-13T21:19:18.615097+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:19:27.051993+00:00",
+      "seconds": 8.435688650992233,
+      "log_sha256": "3f8de5f1d27591b2d4711cd1731d1c67e553cd49b621aa34c3c8fdae14dda548",
+      "output_sha256": {}
+    },
+    "dft-127-350": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "127",
+        "350",
+        "3"
+      ],
+      "started": "2026-10-13T21:19:27.053090+00:00",
+      "returncode": 0,
+      "finished": "2026-10-13T21:19:36.957411+00:00",
+      "seconds": 9.901414257998113,
+      "log_sha256": "0e200a3d9864d9485307f9f432872e739602e795c4b7a8e611173ed21423367c",
+      "output_sha256": {}
+    },
+    "dft-128-250": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "128",
+        "250",
+        "3",
+        "--basis"
+      ],
+      "started": "2026-10-14T06:44:36.706646+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T06:53:32.191506+00:00",
+      "seconds": 535.4828928159841,
+      "log_sha256": "714dc918d4b7fb76f05e2ce85b322ebd99f54dd2fad75574b5db0ba1af6c6465",
+      "output_sha256": {}
+    },
+    "dft-128-350": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "128",
+        "350",
+        "3",
+        "--basis"
+      ],
+      "started": "2026-10-14T06:53:32.192827+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T07:03:36.096666+00:00",
+      "seconds": 603.9027382950007,
+      "log_sha256": "e1f040e0c31af7b43bb100ed17d629fffe13a710e5934a70b57f6a28a1531c68",
+      "output_sha256": {}
+    },
+    "dft-256-450": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "256",
+        "450",
+        "3"
+      ],
+      "started": "2026-10-14T07:03:36.100965+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T07:06:55.472300+00:00",
+      "seconds": 199.3702199840045,
+      "log_sha256": "2169299aee3936448992ea4904561f9270f7f97221651832b081c7544e1d94e1",
+      "output_sha256": {}
+    },
+    "dft-256-550": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "256",
+        "550",
+        "3"
+      ],
+      "started": "2026-10-14T07:06:55.473500+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T07:12:44.351557+00:00",
+      "seconds": 348.8772167499992,
+      "log_sha256": "fb70e762a9718290aa22e4bd803960fd749be58f783f56f60c92baedb316e342",
+      "output_sha256": {}
+    },
+    "cslots-7-60": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_cslots.py",
+        "7",
+        "60",
+        "3",
+        "--basis",
+        "--conj-dag"
+      ],
+      "started": "2026-10-14T07:12:44.352777+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T07:12:44.543345+00:00",
+      "seconds": 0.18776928901206702,
+      "log_sha256": "5371f9b9aa27b64a58bd30e74a3e3dc6f688a2f1757c4462ebaf850aa61eee84",
+      "output_sha256": {}
+    },
+    "cslots-9-60": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_cslots.py",
+        "9",
+        "60",
+        "3",
+        "--basis",
+        "--conj-dag"
+      ],
+      "started": "2026-10-14T07:12:44.544435+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T07:12:44.770874+00:00",
+      "seconds": 0.22507444402435794,
+      "log_sha256": "241aac5aa1dc5db5e3b0f445014ebd3a3a2c1511f6024471ac1cdeecf3df7774",
+      "output_sha256": {}
+    },
+    "cslots-15-60": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_cslots.py",
+        "15",
+        "60",
+        "3",
+        "--basis",
+        "--conj-dag"
+      ],
+      "started": "2026-10-14T07:12:44.771913+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T07:12:51.627348+00:00",
+      "seconds": 6.853877501998795,
+      "log_sha256": "fb581ba1d7d2af6a01f2d9d4b950c165a148c641df88cbe990a2fb266423655c",
+      "output_sha256": {}
+    },
+    "cslots-31-60": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_cslots.py",
+        "31",
+        "60",
+        "3",
+        "--basis",
+        "--conj-dag"
+      ],
+      "started": "2026-10-14T07:12:51.628530+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T07:14:20.695631+00:00",
+      "seconds": 89.06437618102063,
+      "log_sha256": "f535255e7f4327b5233314ba7a4ee92ba4cbcdbccef4dec26c9cb5fc5381ed68",
+      "output_sha256": {}
+    },
+    "cslots-33-60": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_cslots.py",
+        "33",
+        "60",
+        "3",
+        "--basis",
+        "--conj-dag"
+      ],
+      "started": "2026-10-14T07:14:20.696793+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T07:16:08.723764+00:00",
+      "seconds": 108.02407913899515,
+      "log_sha256": "b64bd1d0f45ae63720d2f6335f02c4efbf875aa3736ca0e2798a2d731132e6c3",
+      "output_sha256": {}
+    },
+    "cslots-63-100": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_cslots.py",
+        "63",
+        "100",
+        "3",
+        "--basis",
+        "--conj-dag"
+      ],
+      "started": "2026-10-14T07:16:08.724943+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T07:32:35.902699+00:00",
+      "seconds": 987.1762335650274,
+      "log_sha256": "3dcd5fc2a9d31150e96480b89a1c94c94dbf23834417d8584f5df25410a8201b",
+      "output_sha256": {}
+    },
+    "cslots-64-120": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_cslots.py",
+        "64",
+        "120",
+        "3",
+        "--basis",
+        "--conj-dag"
+      ],
+      "started": "2026-10-14T07:32:35.903878+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T07:49:45.970536+00:00",
+      "seconds": 1030.065222537989,
+      "log_sha256": "be70d9eb192825ae9bb1e4aff243d9ab6f2b003115498b9a48432a13ac403128",
+      "output_sha256": {}
+    },
+    "cslots-64-220": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_cslots.py",
+        "64",
+        "220",
+        "3",
+        "--basis",
+        "--conj-dag"
+      ],
+      "started": "2026-10-14T07:49:45.975074+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T08:08:52.247838+00:00",
+      "seconds": 1146.2711851710046,
+      "log_sha256": "f63d002715cc89be3171b0274fecf5ddd5b08376364744330cccda5608fef9cd",
+      "output_sha256": {}
+    },
+    "cslots-128-250": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_cslots.py",
+        "128",
+        "250",
+        "3",
+        "--conj-dag"
+      ],
+      "started": "2026-10-14T08:08:52.249544+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T08:22:26.747950+00:00",
+      "seconds": 814.4966579339816,
+      "log_sha256": "30d2a0499af3445c6b1bbcfb6c93b8a6db332240c1e8e5181f5726a8aeb1cbf1",
+      "output_sha256": {}
+    },
+    "cslots-128-350": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_cslots.py",
+        "128",
+        "350",
+        "3",
+        "--conj-dag"
+      ],
+      "started": "2026-10-14T08:22:26.751367+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T08:37:45.993718+00:00",
+      "seconds": 919.2407338850026,
+      "log_sha256": "4816cfa66b25b62d0e7024ddaa290d26f55a3c6615868f9bf5162effa0226ab4",
+      "output_sha256": {}
+    },
+    "cslots-256-450": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_cslots.py",
+        "256",
+        "450",
+        "1",
+        "--conj-dag"
+      ],
+      "started": "2026-10-14T08:37:45.995653+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:08:48.825979+00:00",
+      "seconds": 1862.8284072199895,
+      "log_sha256": "90f8cc87752b96017919a2ddd15ce94bfc658a6a9eec0867ada2be4f31777d8f",
+      "output_sha256": {}
+    },
+    "cslots-256-550": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_cslots.py",
+        "256",
+        "550",
+        "1",
+        "--conj-dag"
+      ],
+      "started": "2026-10-14T09:08:48.830715+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:47:40.173998+00:00",
+      "seconds": 2331.3401621129888,
+      "log_sha256": "4cd9045659db98402757fbb1c6e0c2b73b49a87d92d0d279ad705676662d4244",
+      "output_sha256": {}
+    },
+    "float64-8": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "8",
+        "0",
+        "6",
+        "--float"
+      ],
+      "started": "2026-10-14T09:47:40.175892+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:47:40.367303+00:00",
+      "seconds": 0.18819188099587336,
+      "log_sha256": "64011ed02348153d804ca545b4ff1867ca89e5be5ea4e6ac8a9c88907c0fb513",
+      "output_sha256": {}
+    },
+    "float64-16": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "16",
+        "0",
+        "6",
+        "--float"
+      ],
+      "started": "2026-10-14T09:47:40.371277+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:47:40.515769+00:00",
+      "seconds": 0.14414124100585468,
+      "log_sha256": "2985a6164d88e4415696f596c941c37f03fe13a7fc83c6334d4c9e7d33900ca4",
+      "output_sha256": {}
+    },
+    "float64-24": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "24",
+        "0",
+        "6",
+        "--float"
+      ],
+      "started": "2026-10-14T09:47:40.519180+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:47:40.705063+00:00",
+      "seconds": 0.18429172900505364,
+      "log_sha256": "ce7d08adfcc434b5551ee46f883df3b4c7c3f6bb87550b59dfcc17fd88c46b6e",
+      "output_sha256": {}
+    },
+    "float64-32": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "32",
+        "0",
+        "6",
+        "--float"
+      ],
+      "started": "2026-10-14T09:47:40.706631+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:47:40.941542+00:00",
+      "seconds": 0.23512541298987344,
+      "log_sha256": "335e4b478cb9637d151a3da3bc797e07d977a9ec78d4409d2f1615c73ab4cd35",
+      "output_sha256": {}
+    },
+    "float64-48": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "48",
+        "0",
+        "6",
+        "--float"
+      ],
+      "started": "2026-10-14T09:47:40.945688+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:47:41.211251+00:00",
+      "seconds": 0.2645933369931299,
+      "log_sha256": "7a0dbc21ca869dfc44f51c842342550bdad9234e311e1e493a39f0037fc5d7e7",
+      "output_sha256": {}
+    },
+    "float64-64": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "64",
+        "0",
+        "6",
+        "--float"
+      ],
+      "started": "2026-10-14T09:47:41.212498+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:47:41.563787+00:00",
+      "seconds": 0.34984297200571746,
+      "log_sha256": "150503e6ef66e72ff3052efdfef7b1fa6444fb60406cd8ef109c7bde701e7b3f",
+      "output_sha256": {}
+    },
+    "float64-96": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_dft.py",
+        "96",
+        "0",
+        "6",
+        "--float"
+      ],
+      "started": "2026-10-14T09:47:41.564901+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:47:42.244381+00:00",
+      "seconds": 0.6778951440064702,
+      "log_sha256": "6103570fb924184b728b3946dbd5de67070bedb434e740120970e0204a4eb3a5",
+      "output_sha256": {}
+    },
+    "stage-32": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/stagewise.py",
+        "32",
+        "60",
+        "--cond"
+      ],
+      "started": "2026-10-14T09:47:42.245580+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:47:43.545577+00:00",
+      "seconds": 1.2968407580046915,
+      "log_sha256": "5b81ac7edc70e537851226db8b04f7cdfaffc1a10f7cb09b8ab90d78347c629a",
+      "output_sha256": {}
+    },
+    "stage-64": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/stagewise.py",
+        "64",
+        "120",
+        "--cond"
+      ],
+      "started": "2026-10-14T09:47:43.546762+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:47:51.396555+00:00",
+      "seconds": 7.846974813990528,
+      "log_sha256": "75dbd12130145f0a4703553fafa61b73dcf845f7929972460139ad110533a045",
+      "output_sha256": {}
+    },
+    "stage-128": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/stagewise.py",
+        "128",
+        "250"
+      ],
+      "started": "2026-10-14T09:47:51.397771+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:49:29.311381+00:00",
+      "seconds": 97.90967631997773,
+      "log_sha256": "6ce5d017a2d12e1c410baf5dbdeafe585684207cc2429b55eaba6e28d9e570f5",
+      "output_sha256": {}
+    },
+    "causal-32": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/causal_levels.py",
+        "32",
+        "40"
+      ],
+      "started": "2026-10-14T09:49:29.314245+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:49:29.984956+00:00",
+      "seconds": 0.6584217739873566,
+      "log_sha256": "4a9a4c31ac5dbb22f74190231369c6d4e8b241b99286506423da95287555ff92",
+      "output_sha256": {}
+    },
+    "causal-64": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/causal_levels.py",
+        "64",
+        "60"
+      ],
+      "started": "2026-10-14T09:49:29.987608+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:49:32.785449+00:00",
+      "seconds": 2.786840418004431,
+      "log_sha256": "4c84654928a25d6e5cb011e1e914a55b3fd45dd51d483445121006c37bf38a0f",
+      "output_sha256": {}
+    },
+    "causal-128": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/causal_levels.py",
+        "128",
+        "100"
+      ],
+      "started": "2026-10-14T09:49:32.786621+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:50:16.911776+00:00",
+      "seconds": 44.12423114999547,
+      "log_sha256": "89e6f26866a9643a283abdaf893244372eefd1dae07e2872f94b187bbb5098a6",
+      "output_sha256": {}
+    },
+    "phase-64-tword": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/phase_precision.py",
+        "64",
+        "50",
+        "--stage",
+        "tword",
+        "--output-json",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/phase-64-tword.json"
+      ],
+      "started": "2026-10-14T09:50:16.919031+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:50:18.703925+00:00",
+      "seconds": 1.783698921004543,
+      "log_sha256": "8ac0604b282a38f2beb586630f6259fb5b74247607f125fcee356200ee971345",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/phase-64-tword.json": "49e67ea125d2631f10e17e24c7ac3f9cbf00c8435f4009d538ac40fb9f16a478"
+      }
+    },
+    "phase-64-word": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/phase_precision.py",
+        "64",
+        "50",
+        "--stage",
+        "word",
+        "--output-json",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/phase-64-word.json"
+      ],
+      "started": "2026-10-14T09:50:18.710476+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:50:20.617369+00:00",
+      "seconds": 1.9058181990112644,
+      "log_sha256": "c57cb90c7145aeb6d477b7623d8fabe67fc14c2fad0634f6ab440c0887454253",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/phase-64-word.json": "3c2c7ce0ac7251cf3a16d53a34bc9f4bf3c30d008c418c04f4d18e04b1963809"
+      }
+    },
+    "phase-128-tword": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/phase_precision.py",
+        "128",
+        "90",
+        "--stage",
+        "tword",
+        "--output-json",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/phase-128-tword.json"
+      ],
+      "started": "2026-10-14T09:50:20.618649+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:50:48.178759+00:00",
+      "seconds": 27.55562340497272,
+      "log_sha256": "1b613838b2edda93609e56acee5fc364bebdc743e7e7eae02fb20daa17526a6d",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/phase-128-tword.json": "0493f0c0a731264042ad7a5a0f50db619cf1af8d4377f670417b84b781303d60"
+      }
+    },
+    "phase-128-word": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/phase_precision.py",
+        "128",
+        "90",
+        "--stage",
+        "word",
+        "--output-json",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/phase-128-word.json"
+      ],
+      "started": "2026-10-14T09:50:48.180847+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:51:15.630742+00:00",
+      "seconds": 27.448267691972433,
+      "log_sha256": "8b31ef0ed256a3f69270027d60eb0615987154cca8d09219fb0f68184a80d8bb",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/phase-128-word.json": "d3b28f0a95de0db7a27958a3ada1ab60269f3f34962bd3bc33c2348b224903a4"
+      }
+    },
+    "cond-16": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/cond_T.py",
+        "16",
+        "60"
+      ],
+      "started": "2026-10-14T09:51:15.632294+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:51:15.700629+00:00",
+      "seconds": 0.0667848979937844,
+      "log_sha256": "415f2a6a1383634a48a7e73474a70be76dc55701e156be9720d65dff5b147cf3",
+      "output_sha256": {}
+    },
+    "cond-32": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/cond_T.py",
+        "32",
+        "80"
+      ],
+      "started": "2026-10-14T09:51:15.701861+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:51:15.982770+00:00",
+      "seconds": 0.28000023201457225,
+      "log_sha256": "388dd89f9e508496412d45167d94281f9582aa45fbad73dce9e49e05db382c5e",
+      "output_sha256": {}
+    },
+    "cond-48": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/cond_T.py",
+        "48",
+        "100"
+      ],
+      "started": "2026-10-14T09:51:15.984039+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:51:16.863254+00:00",
+      "seconds": 0.877810606994899,
+      "log_sha256": "e041e5e257ed6827ea6b5f79522afa0bde8a8d541de0534beae08355bb175c22",
+      "output_sha256": {}
+    },
+    "cond-96": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/cond_T.py",
+        "96",
+        "160"
+      ],
+      "started": "2026-10-14T09:51:16.864489+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:51:24.150631+00:00",
+      "seconds": 7.28351632799604,
+      "log_sha256": "0a6cc0c30c5cf786b8ee42fbbcbac97bb81a8156736dc8361a27c3133d557827",
+      "output_sha256": {}
+    },
+    "cond-128": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/cond_T.py",
+        "128",
+        "200"
+      ],
+      "started": "2026-10-14T09:51:24.151888+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:51:42.766531+00:00",
+      "seconds": 18.61315346797346,
+      "log_sha256": "caa2159782e73668bfbcc6295daf682b5735331226133d8ad01466ea76ed2c67",
+      "output_sha256": {}
+    },
+    "toeplitz-352-300": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_toeplitz.py",
+        "352",
+        "300",
+        "3"
+      ],
+      "started": "2026-10-14T09:51:42.767777+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:55:18.350619+00:00",
+      "seconds": 215.5814685310179,
+      "log_sha256": "3183df2b05b51c8f73c632e4560165e7a794e4092ff2f9440e6aab7410a99706",
+      "output_sha256": {}
+    },
+    "toeplitz-352-400": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_toeplitz.py",
+        "352",
+        "400",
+        "3"
+      ],
+      "started": "2026-10-14T09:55:18.351940+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T09:58:59.335072+00:00",
+      "seconds": 220.9798089529795,
+      "log_sha256": "ab4a8439db7ea6625ab6b035dbce4d199a47353f78fa8f920882c655b31235d9",
+      "output_sha256": {}
+    },
+    "toeplitz-640-400": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_toeplitz_stream.py",
+        "640",
+        "400",
+        "3"
+      ],
+      "started": "2026-10-14T09:58:59.336300+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T10:12:29.765174+00:00",
+      "seconds": 810.4273122430022,
+      "log_sha256": "9b41aa09dc163e3e40356a777f784c9201bd57afaf7efa739311c6143e5d63e1",
+      "output_sha256": {}
+    },
+    "toeplitz-640-500": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_toeplitz_stream.py",
+        "640",
+        "500",
+        "3"
+      ],
+      "started": "2026-10-14T10:12:29.766417+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T10:28:45.665736+00:00",
+      "seconds": 975.89798951798,
+      "log_sha256": "0f3bbdb6a4d8300dc2f4522b504fdde0342c2b2b2bb44924bb00558f77319b3d",
+      "output_sha256": {}
+    },
+    "toeplitz-1024-600": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_toeplitz_stream.py",
+        "1024",
+        "600",
+        "3"
+      ],
+      "started": "2026-10-14T10:28:45.667099+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T11:38:28.902846+00:00",
+      "seconds": 4183.234135833976,
+      "log_sha256": "81687411dc1b5c5d2b8a6b14adfb1f6bacb1f707a11e5113b520c931367720f1",
+      "output_sha256": {}
+    },
+    "toeplitz-1024-700": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/mp_check_toeplitz_stream.py",
+        "1024",
+        "700",
+        "3"
+      ],
+      "started": "2026-10-14T11:38:28.904461+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:41:08.683283+00:00",
+      "seconds": 3759.7761479670007,
+      "log_sha256": "68072e302ff2049c6338cc39b3558b2ba2c7394dba63e1e7f992f28a54e5542a",
+      "output_sha256": {}
+    },
+    "roots": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/roots_h.py"
+      ],
+      "started": "2026-10-14T12:41:08.684607+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:41:15.039930+00:00",
+      "seconds": 6.352612943999702,
+      "log_sha256": "df724d40a6e0b63be05bc658835197ef83fe9fa330970408e45289585ada825d",
+      "output_sha256": {}
+    },
+    "strict-64": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/strict_tables.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-64.csv",
+        "64"
+      ],
+      "started": "2026-10-14T12:41:15.045722+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:41:15.431655+00:00",
+      "seconds": 0.3848231209849473,
+      "log_sha256": "3b4e239eec0de40b232b6c7703a061611f70e0825aef1419af69d35de7a258cf",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-64.csv": "259e1591ed7f3f79a83717a6b30d35398fd1b101ab3edda8973d6a62d0b2b2a1"
+      }
+    },
+    "topology-64": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/topology_audit.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-64.csv",
+        "64"
+      ],
+      "started": "2026-10-14T12:41:15.433043+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:41:16.776790+00:00",
+      "seconds": 1.3408242300210986,
+      "log_sha256": "ffcf1b17331bb176bef0c7c6cf34b1fc26fbaa9480b799075ea4b963998c2403",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-64.csv": "8ec08f996f44d72c1f255940ac43657bf32dc0330161d57f1e156fecf901004f"
+      }
+    },
+    "strict-128": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/strict_tables.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-128.csv",
+        "128"
+      ],
+      "started": "2026-10-14T12:41:16.778235+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:41:18.473433+00:00",
+      "seconds": 1.692687802016735,
+      "log_sha256": "70db7908d95f00978febfb8d7d070413e89d2aa2adb117ece5b787e4b41d0007",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-128.csv": "14f73600560d7380492c5c245a8e99a1b57a90ce0e94d0d0a4eaee22faf3d4ab"
+      }
+    },
+    "topology-128": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/topology_audit.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-128.csv",
+        "128"
+      ],
+      "started": "2026-10-14T12:41:18.477569+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:41:25.187344+00:00",
+      "seconds": 6.708073436981067,
+      "log_sha256": "0cc30ad1979df34411d87a523ec2d1a9ffc2962a91423e816bb706edcc753e8e",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-128.csv": "9c2988c28b9b5c387151395b5d4ec43abd730e6244a4ee6c15747059087713ba"
+      }
+    },
+    "strict-256": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/strict_tables.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-256.csv",
+        "256"
+      ],
+      "started": "2026-10-14T12:41:25.228077+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:41:32.648856+00:00",
+      "seconds": 7.419070275995182,
+      "log_sha256": "1f4015eeb9e7e5b9bc3ac1b7471746c82a25e90b70c1918707aac101a7075aec",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-256.csv": "9dbee3bb757d0998c6ed290c095e43599f7916121eb83a482ed8766a300c94b4"
+      }
+    },
+    "topology-256": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/topology_audit.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-256.csv",
+        "256"
+      ],
+      "started": "2026-10-14T12:41:32.650312+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:42:03.462071+00:00",
+      "seconds": 30.808850834990153,
+      "log_sha256": "d676814ae4c75f31304bf2484b2f22b99af6f55b01ecc3fbf3d63ddc2950a0c4",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-256.csv": "6ba13567dce8dbff51a9eb5a7174a75fa01f843415f5e403b6826f5a099da396"
+      }
+    },
+    "strict-288": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/strict_tables.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-288.csv",
+        "288"
+      ],
+      "started": "2026-10-14T12:42:03.466533+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:42:13.166300+00:00",
+      "seconds": 9.698494109994499,
+      "log_sha256": "407d122468b2edc3f0755e5e1e3b80e8f3289e5fb184c510a7116a733eefa830",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-288.csv": "4d79900a0521e000df3edb81799ff7b2a74710bd80ca23fbae3d7743754bc781"
+      }
+    },
+    "topology-288": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/topology_audit.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-288.csv",
+        "288"
+      ],
+      "started": "2026-10-14T12:42:13.170453+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:42:52.922455+00:00",
+      "seconds": 39.75085468401085,
+      "log_sha256": "4289d71d02308a59a5c23caae01c7a35091b4f32be2fa41accdb7607e40fa74c",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-288.csv": "4b3719245690630d609797700199b823fa19f328ab833041a729074f4d0c3c35"
+      }
+    },
+    "strict-320": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/strict_tables.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-320.csv",
+        "320"
+      ],
+      "started": "2026-10-14T12:42:52.923947+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:43:04.987936+00:00",
+      "seconds": 12.06144439498894,
+      "log_sha256": "b584c23d5c1700d3691c9999ee3f0b40bbfb3758e178de1e77856d41848f8880",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-320.csv": "da58e1420a87577a7e9ff4f47731b866ade510f6f4b5d8d1da0423be5f8a50fd"
+      }
+    },
+    "topology-320": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/topology_audit.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-320.csv",
+        "320"
+      ],
+      "started": "2026-10-14T12:43:05.035242+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:43:53.658768+00:00",
+      "seconds": 48.62245044799056,
+      "log_sha256": "f678a3f688d387e56a804f4ae23612fc9ac88685e625e64a67438b786776f862",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-320.csv": "09104cb3c5ab86af617d441227b9f7215b242a1d736210b4fe12db57baf49581"
+      }
+    },
+    "strict-336": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/strict_tables.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-336.csv",
+        "336"
+      ],
+      "started": "2026-10-14T12:43:53.662898+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:44:07.341144+00:00",
+      "seconds": 13.677145247987937,
+      "log_sha256": "23b194d369ef1b3c391fdd9ca9fa27ded2173ae5c3b28c5c655cdb3fc4cae1b9",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-336.csv": "a5018a8b2e51cd40be26690b40dc5e280de87274ba426f96e52711e4d71cfc42"
+      }
+    },
+    "topology-336": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/topology_audit.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-336.csv",
+        "336"
+      ],
+      "started": "2026-10-14T12:44:07.342568+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:45:02.711973+00:00",
+      "seconds": 55.36672689800616,
+      "log_sha256": "27c407c514fa5e5d296037898d3bf7e9712869aa618c6044a5e56cb35c070c7d",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-336.csv": "2748b5bcfe260c9dbe8244fe7d4c5f946cfb1d9e585c1661987f32c196a1b861"
+      }
+    },
+    "strict-352": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/strict_tables.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-352.csv",
+        "352"
+      ],
+      "started": "2026-10-14T12:45:02.716364+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:45:15.706370+00:00",
+      "seconds": 12.988913919019978,
+      "log_sha256": "cda300af5a81aa44f5fdea4e406cc06112fa48f4b25932007b0408c91848ea79",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-352.csv": "c08e56593d20bd592c940fd820eb44b56f7d49d336c28d6145e41d79c1ba22a7"
+      }
+    },
+    "topology-352": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/topology_audit.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-352.csv",
+        "352"
+      ],
+      "started": "2026-10-14T12:45:15.707829+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:46:07.493582+00:00",
+      "seconds": 51.78306727699237,
+      "log_sha256": "6233bf2e3ab8233ba4f050f0daee4353df598bd6c614c6d04ec3e45c5c9954b0",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-352.csv": "075f156ecc2a574709156be12a3c06dcf7366959d059ab6c417334a0629832e7"
+      }
+    },
+    "strict-384": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/strict_tables.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-384.csv",
+        "384"
+      ],
+      "started": "2026-10-14T12:46:07.495009+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:46:22.863592+00:00",
+      "seconds": 15.365796111000236,
+      "log_sha256": "d261fe1788e42faec0d47bfba2c28a820701db6f1032052105e6174a4369ddc3",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-384.csv": "91028695f688607fb85867395dcfd8c61c01b5725da50d313f3b1591c7a0b28a"
+      }
+    },
+    "topology-384": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/topology_audit.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-384.csv",
+        "384"
+      ],
+      "started": "2026-10-14T12:46:22.864975+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:47:25.901680+00:00",
+      "seconds": 63.03375843298272,
+      "log_sha256": "c41daa8899b14b2c6095b0e63c43e20d7c4f493f639fe2386e9b831c3c7a5ae6",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-384.csv": "10f441b3b901463065b33f97c452327945d9eb42326e14e70ef7624ba3453312"
+      }
+    },
+    "strict-512": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/strict_tables.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-512.csv",
+        "512"
+      ],
+      "started": "2026-10-14T12:47:25.903120+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:48:14.966520+00:00",
+      "seconds": 49.06067358798464,
+      "log_sha256": "4041291d68109249bc80d0e6871d7bcee093c0b7ebf36d96f2e89073b29e6108",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-512.csv": "a09f335077cda6952f15ae7d327daf49cb08a4300c035dadb4713d0f97c58a09"
+      }
+    },
+    "topology-512": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/topology_audit.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-512.csv",
+        "512"
+      ],
+      "started": "2026-10-14T12:48:14.967934+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:50:13.887937+00:00",
+      "seconds": 118.91874082299182,
+      "log_sha256": "d35694685eed29165eba94b5519bb1f19862a0ada8e8530035a9709443db4f03",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-512.csv": "77dc20eb1327d0f62a0ecf21f2a320fb94d18744f686a0d2493cf29ee60f66ae"
+      }
+    },
+    "strict-640": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/strict_tables.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-640.csv",
+        "640"
+      ],
+      "started": "2026-10-14T12:50:13.889323+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:51:02.981266+00:00",
+      "seconds": 49.09085408199462,
+      "log_sha256": "4dd86a0b4b6e7ea4bd8c571353757196c8288f0e7ddaad2a5a36a5522f636c39",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-640.csv": "10c6bc04801aca58c01a8aec5c02047fb9036d13aaf2654be8e09db35a16babc"
+      }
+    },
+    "topology-640": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/topology_audit.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-640.csv",
+        "640"
+      ],
+      "started": "2026-10-14T12:51:02.984040+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:54:14.437332+00:00",
+      "seconds": 191.45207568901242,
+      "log_sha256": "c95af410b4709cd040bb0097caa6f968b7b5ab64586ce05184c43dd25bba6598",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-640.csv": "0c0af1eb91e42623125f7b3d2171626d54127e1538048a50978e987163f35169"
+      }
+    },
+    "strict-768": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/strict_tables.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-768.csv",
+        "768"
+      ],
+      "started": "2026-10-14T12:54:14.439037+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:55:23.476456+00:00",
+      "seconds": 69.03491608001059,
+      "log_sha256": "6a279bb40934c487c4e94af18e2df9984106657c8559616b48cab35e4fd2b26e",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-768.csv": "5523ed15a44dbd25e3204e12d6873a69725a05f4ceff79217f9cff54b69102eb"
+      }
+    },
+    "topology-768": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/topology_audit.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-768.csv",
+        "768"
+      ],
+      "started": "2026-10-14T12:55:23.477965+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T12:59:50.974001+00:00",
+      "seconds": 267.4933672659972,
+      "log_sha256": "5df8ffb8bbda896221a2bb45b76203ea4445036ec7cd263a78ccad4e8da34ebc",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-768.csv": "5e605b0729b295cb83509152c4846c6f0854a0debb21b59eac505b2b62e95a02"
+      }
+    },
+    "strict-1024": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/strict_tables.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-1024.csv",
+        "1024"
+      ],
+      "started": "2026-10-14T12:59:50.975514+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T13:01:53.835777+00:00",
+      "seconds": 122.85759220598266,
+      "log_sha256": "85f73b28c9e3736fc38102897af08093bd380da45f9242996af9035fc98ad4a5",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/strict-1024.csv": "4855c16e26d634d7e4bc7a96d85f439379442a7cd92294b02ac4a6b6c0dd9025"
+      }
+    },
+    "topology-1024": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/topology_audit.py",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-1024.csv",
+        "1024"
+      ],
+      "started": "2026-10-14T13:01:53.838832+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T13:09:47.840477+00:00",
+      "seconds": 474.0002901639964,
+      "log_sha256": "741c3c1b17a7202be25edce5d94c75b5c524011b411a6cf125068f20e585d4e2",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw/topology-1024.csv": "25eb174b0d376320a983e88fd31ef16ecba10d4bd7a9af6166d5cba624aee669"
+      }
+    },
+    "depth-model": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/depth_exact_rule.py",
+        "--strict"
+      ],
+      "started": "2026-10-14T13:09:47.843561+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T13:09:56.315438+00:00",
+      "seconds": 8.461459679994732,
+      "log_sha256": "9dd2bcd643d6600328a5e3a2e78248ffced2b752344117b2195a63694abe9e90",
+      "output_sha256": {}
+    },
+    "rounds": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/rounds_check.py"
+      ],
+      "started": "2026-10-14T13:09:56.317754+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T13:10:27.875674+00:00",
+      "seconds": 31.555990068009123,
+      "log_sha256": "faa0eac3e0721ac1ed8db6703e827557b29feb6c4e506c2fd6ed65c71a94d3af",
+      "output_sha256": {}
+    },
+    "timing-64": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/timing.py",
+        "64"
+      ],
+      "started": "2026-10-14T13:10:27.878101+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T13:10:28.113828+00:00",
+      "seconds": 0.22250041700317524,
+      "log_sha256": "a339c6890bbc1e26523c43c13b4c011b58e3399d510a8d58b9f6e51d9e2dda41",
+      "output_sha256": {}
+    },
+    "timing-128": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/timing.py",
+        "128"
+      ],
+      "started": "2026-10-14T13:10:28.115204+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T13:10:29.131681+00:00",
+      "seconds": 1.0153635260066949,
+      "log_sha256": "ae27d4784885d7f1d08356b198d0844b3530a9c3204ccc48bd7450ef3cadbd6e",
+      "output_sha256": {}
+    },
+    "timing-256": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/timing.py",
+        "256"
+      ],
+      "started": "2026-10-14T13:10:29.133122+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T13:10:34.034354+00:00",
+      "seconds": 4.8999884630029555,
+      "log_sha256": "83ca93d8fc28b9bc76743875547f7d0a3643494db15abab3a51450ca4a3285ca",
+      "output_sha256": {}
+    },
+    "timing-512": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/timing.py",
+        "512"
+      ],
+      "started": "2026-10-14T13:10:34.035855+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T13:10:51.856791+00:00",
+      "seconds": 17.819792106980458,
+      "log_sha256": "00032e50d3ee8517b3510ca3c7253a638316c58077361073401f17cd253dd4a9",
+      "output_sha256": {}
+    },
+    "collect": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/collect_v6.py",
+        "--log-dir",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/raw",
+        "--output-dir",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data"
+      ],
+      "started": "2026-10-14T13:10:51.866684+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T13:10:51.910767+00:00",
+      "seconds": 0.04290253997896798,
+      "log_sha256": "cedfffbbedfbb94a2e9226d3fad3420bf1b072c6f34a16dd229e77a2f0c110a7",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/collection.json": "ac551cf167c9e51473f78b18b5dedc788c098a66bca514c0c2b5a0a9653fdf8f",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/depth_model_strict.csv": "da84b61319907b1ba00f1100648f5bdbf175fb1245dc2173bcb2b2bd0fab3bd5",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/depth_model_widths.csv": "61ecbb7e89a74722060154c0203c625c96f3f02c384c2e5974f72b9301ea4f69",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/dft_precision.csv": "142778a53a7cbf38bcb7faf1581cf76c4aec7a2c088687a2a2f0599a1fa3b126",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/strict_tables.csv": "06df86827ebb1c23d0352edd6393e99e4a99b6117c4f5fae85e96a1021258138",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/v6/causal_levels.csv": "8c01d676a85eee7fb1ecc803cbff5f023722739a7bf6ce3e6ff472bd71e38cc1",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/v6/cond.csv": "66df8902d5a674ef1701ef048bca9280607412465537f38cb26d627157827803",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/v6/cslots.csv": "d67f5cdeff78bd57b345078da8693b7ba18bfe0b80b3d5618d1c8d813e21f628",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/v6/exact.csv": "2734309148f56e1ae0a5eec0d6c597e40e75d78d7ef80257f53dfaf07c887ffb",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/v6/mp_dft.csv": "40b095419b2853795af10ab7b37e51dfe336cb99a64eefcfcae0fb06db6a408a",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/v6/phase_precision.csv": "474a8bfb2ec1c7cfbf5f61174b9ac7946b84d70edc0cf4a794616daf3f95dbb3",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/v6/roots.csv": "eb4b4a12f04028606af31e19f1a5bb4055ab2717760d85d1189380cacd7fb506",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/v6/rounds.csv": "3e6efcdc451576050433406490167de5837b52a0470e9235db84c18bcf6e9257",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/v6/stagewise.csv": "e892d88b9bfa9add2f7b41e025a7143d14117ba4448bed11043edb886b722d7d",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/v6/timing.csv": "b4c22fad9e9e0a3f3c022bc75e4245418b5e4a5a4a7c26ce57b7d231a468204e",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/v6/toeplitz.csv": "a4c711bc08d7a1d9399c17ec6db583fc58df6318b89a728c37ef66a652803150",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data/v6/topology.csv": "772c3e6d29a7c31e9d3abc1343dcb4e415201ab7de4d8ee5b36e2ad86ea0d603"
+      }
+    },
+    "verify": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/verify_tables.py",
+        "--data-dir",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data",
+        "--mode",
+        "full",
+        "--output-json",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/verification.json"
+      ],
+      "started": "2026-10-14T13:10:51.912909+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T13:10:51.992856+00:00",
+      "seconds": 0.07874700400861911,
+      "log_sha256": "838bdf8ac6ee1c1e1eef6fe42c1f18fdad0a9d3190c92e497eb0f20e853f0a59",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/verification.json": "5440a512360fc940af801558fba6476a22b05b8d38650b53f94927e78fb45e6e"
+      }
+    },
+    "figures": {
+      "argv": [
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/clean-env/bin/python",
+        "paper/scripts/make_figures.py",
+        "--data-dir",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/data",
+        "--fig-dir",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures"
+      ],
+      "started": "2026-10-14T13:10:51.995433+00:00",
+      "returncode": 0,
+      "finished": "2026-10-14T13:10:54.712767+00:00",
+      "seconds": 2.716098516015336,
+      "log_sha256": "58eb12f89a70be724b3e63cd79e5b5a34c898b1912633abbf6a6dbc4a85f6618",
+      "output_sha256": {
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig1_depth.pdf": "f15bd64deef2675faf44288edb2eaf113d823aa77bacb7153eb8e88f63ffc42a",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig1_depth.png": "61abb0732e035208cb7f174cbbfff9bb2039093a17734ee732b311e93f412167",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig2_cost.pdf": "2779d0104b325cb2908bfb1dab6705c7940d2aad91eac8219e5ed5afe87f4ba7",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig2_cost.png": "4921bd62790b5bf898e5b1f85ae413e21caa5a45de22c6b3b44c833ae4640ef8",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig3_log4_law.pdf": "e3e0cc68e313ad8c7bab8de94eb1314b996fbccaa81971545d75f788b01d3464",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig3_log4_law.png": "52d834c6f98f44b958b9ddb04c201bcfb72ee0966b421f170985b2d042148732",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig4_tradeoff_r512.pdf": "3ed2df254b7debe2a7480608914bacd544329f48bf8ec41e55b5af406fd0d19c",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig4_tradeoff_r512.png": "30c4b7c05250e6cc6124a994d77d3fc6ec178911ea95eb3c1ff7190fbedd5d6c",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig5_precision.pdf": "e3d15c4985ca8fca22cac4179ea0d12cf8d6ac43320baaf93b2e315d6b1d0efb",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig5_precision.png": "0ea271065ea71960351489dfeb778e869b7c06daf142cc37b7db943138f22a79",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig6_stagewise.pdf": "90cba2d979e9ee3c58c02cf3b90ad397885b6cddb61bd8e75ff36e785cab5607",
+        "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/runs/full-20261013-r3/figures/fig6_stagewise.png": "80f1b09e4ea6148733ab9a7fb6d3899ecc8efefea35ae2f69b957e923da89294"
+      }
+    }
+  },
+  "generated_source_inputs": [
+    "data/gate_count_table_b_le_1024.pkl",
+    "data/gate_count_table_b_le_1024_strict.pkl"
+  ],
+  "current_job": null,
+  "finished": "2026-10-14T13:10:54.733769+00:00",
+  "artifact_sha256": {
+    "data/collection.json": "ac551cf167c9e51473f78b18b5dedc788c098a66bca514c0c2b5a0a9653fdf8f",
+    "data/depth_model_strict.csv": "da84b61319907b1ba00f1100648f5bdbf175fb1245dc2173bcb2b2bd0fab3bd5",
+    "data/depth_model_widths.csv": "61ecbb7e89a74722060154c0203c625c96f3f02c384c2e5974f72b9301ea4f69",
+    "data/dft_precision.csv": "142778a53a7cbf38bcb7faf1581cf76c4aec7a2c088687a2a2f0599a1fa3b126",
+    "data/strict_tables.csv": "06df86827ebb1c23d0352edd6393e99e4a99b6117c4f5fae85e96a1021258138",
+    "data/v6/causal_levels.csv": "8c01d676a85eee7fb1ecc803cbff5f023722739a7bf6ce3e6ff472bd71e38cc1",
+    "data/v6/cond.csv": "66df8902d5a674ef1701ef048bca9280607412465537f38cb26d627157827803",
+    "data/v6/cslots.csv": "d67f5cdeff78bd57b345078da8693b7ba18bfe0b80b3d5618d1c8d813e21f628",
+    "data/v6/exact.csv": "2734309148f56e1ae0a5eec0d6c597e40e75d78d7ef80257f53dfaf07c887ffb",
+    "data/v6/mp_dft.csv": "40b095419b2853795af10ab7b37e51dfe336cb99a64eefcfcae0fb06db6a408a",
+    "data/v6/phase_precision.csv": "474a8bfb2ec1c7cfbf5f61174b9ac7946b84d70edc0cf4a794616daf3f95dbb3",
+    "data/v6/roots.csv": "eb4b4a12f04028606af31e19f1a5bb4055ab2717760d85d1189380cacd7fb506",
+    "data/v6/rounds.csv": "3e6efcdc451576050433406490167de5837b52a0470e9235db84c18bcf6e9257",
+    "data/v6/stagewise.csv": "e892d88b9bfa9add2f7b41e025a7143d14117ba4448bed11043edb886b722d7d",
+    "data/v6/timing.csv": "b4c22fad9e9e0a3f3c022bc75e4245418b5e4a5a4a7c26ce57b7d231a468204e",
+    "data/v6/toeplitz.csv": "a4c711bc08d7a1d9399c17ec6db583fc58df6318b89a728c37ef66a652803150",
+    "data/v6/topology.csv": "772c3e6d29a7c31e9d3abc1343dcb4e415201ab7de4d8ee5b36e2ad86ea0d603",
+    "figures/fig1_depth.pdf": "f15bd64deef2675faf44288edb2eaf113d823aa77bacb7153eb8e88f63ffc42a",
+    "figures/fig1_depth.png": "61abb0732e035208cb7f174cbbfff9bb2039093a17734ee732b311e93f412167",
+    "figures/fig2_cost.pdf": "2779d0104b325cb2908bfb1dab6705c7940d2aad91eac8219e5ed5afe87f4ba7",
+    "figures/fig2_cost.png": "4921bd62790b5bf898e5b1f85ae413e21caa5a45de22c6b3b44c833ae4640ef8",
+    "figures/fig3_log4_law.pdf": "e3e0cc68e313ad8c7bab8de94eb1314b996fbccaa81971545d75f788b01d3464",
+    "figures/fig3_log4_law.png": "52d834c6f98f44b958b9ddb04c201bcfb72ee0966b421f170985b2d042148732",
+    "figures/fig4_tradeoff_r512.pdf": "3ed2df254b7debe2a7480608914bacd544329f48bf8ec41e55b5af406fd0d19c",
+    "figures/fig4_tradeoff_r512.png": "30c4b7c05250e6cc6124a994d77d3fc6ec178911ea95eb3c1ff7190fbedd5d6c",
+    "figures/fig5_precision.pdf": "e3d15c4985ca8fca22cac4179ea0d12cf8d6ac43320baaf93b2e315d6b1d0efb",
+    "figures/fig5_precision.png": "0ea271065ea71960351489dfeb778e869b7c06daf142cc37b7db943138f22a79",
+    "figures/fig6_stagewise.pdf": "90cba2d979e9ee3c58c02cf3b90ad397885b6cddb61bd8e75ff36e785cab5607",
+    "figures/fig6_stagewise.png": "80f1b09e4ea6148733ab9a7fb6d3899ecc8efefea35ae2f69b957e923da89294"
+  }
+}

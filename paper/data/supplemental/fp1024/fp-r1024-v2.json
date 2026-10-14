@@ -1,0 +1,226 @@
+{
+ "script": "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/parallel/fp-1024/stream_exact_dft.py",
+ "project": "/home/cyberdid/Projects/FFT-Synthetic-Lab",
+ "argv": [
+  "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/parallel/fp-1024/stream_exact_dft.py",
+  "1024",
+  "--project",
+  "/home/cyberdid/Projects/FFT-Synthetic-Lab",
+  "--primes",
+  "2",
+  "--nvec",
+  "2",
+  "--json",
+  "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/parallel/fp-1024/results/fp-r1024-v2.json"
+ ],
+ "provenance": {
+  "checker_version": "codex-audit-v2",
+  "schema_version": 2,
+  "method": "SHA-256 of on-disk sources at start/end; not bytecode attestation",
+  "start": {
+   "captured_utc": "2026-10-14T08:34:53Z",
+   "script": {
+    "path": "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/parallel/fp-1024/stream_exact_dft.py",
+    "sha256": "9eeedcbaf0568ba2899d016a8a82a7c2950dd74924b45cf94225ebeb3b6fee3b"
+   },
+   "project_modules": [
+    {
+     "name": "allength",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/__init__.py",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+     "name": "allength.chunk_dag",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/chunk_dag.py",
+     "sha256": "38a276d478e153745e1a293d7af2d1f85b30d224cd61817bf323ac7a398fa781"
+    },
+    {
+     "name": "allength.conv_dag",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/conv_dag.py",
+     "sha256": "6cca06f6eb679d75f8e1021ff3a2255fb1e43781f05b5095b1e35d97509590dd"
+    },
+    {
+     "name": "allength.exact_field",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/exact_field.py",
+     "sha256": "54f39cc96d1933bf0427f7b34fd02176bf92b18db239ed0795dbaebc90c64a32"
+    },
+    {
+     "name": "allength.exact_width",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/exact_width.py",
+     "sha256": "e561b3dbddbb4370183c3d4244e67836e65e7508f10d53ca3f2728c1a72e72e4"
+    },
+    {
+     "name": "allength.generic_word",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/generic_word.py",
+     "sha256": "4da3b96eb7372350ba7827daca872950560d88c51c64fcec12df23485acf7d1b"
+    },
+    {
+     "name": "allength.replay",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/replay.py",
+     "sha256": "eef8c645767b5d7b4f09900624b5370a6dd544cec94e2b8c961e8bf96a5eadc0"
+    },
+    {
+     "name": "allength.rounds",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/rounds.py",
+     "sha256": "fc9f9cf40fac4a1a76cde8cae09287bfbf8f8dbcd0138a65fd8cb3d8d5ec5ace"
+    },
+    {
+     "name": "allength.toeplitz_disp",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/toeplitz_disp.py",
+     "sha256": "a6970bce28515a0b3747814b2d2cc4566fb9a01db74ea3d5965a159d2248206c"
+    }
+   ]
+  },
+  "end": {
+   "captured_utc": "2026-10-14T08:42:05Z",
+   "script": {
+    "path": "/home/cyberdid/Documents/FFT-Synthetic-Lab-Claude-review-2026-10-13/parallel/fp-1024/stream_exact_dft.py",
+    "sha256": "9eeedcbaf0568ba2899d016a8a82a7c2950dd74924b45cf94225ebeb3b6fee3b"
+   },
+   "project_modules": [
+    {
+     "name": "allength",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/__init__.py",
+     "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+     "name": "allength.chunk_dag",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/chunk_dag.py",
+     "sha256": "38a276d478e153745e1a293d7af2d1f85b30d224cd61817bf323ac7a398fa781"
+    },
+    {
+     "name": "allength.conv_dag",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/conv_dag.py",
+     "sha256": "6cca06f6eb679d75f8e1021ff3a2255fb1e43781f05b5095b1e35d97509590dd"
+    },
+    {
+     "name": "allength.exact_field",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/exact_field.py",
+     "sha256": "54f39cc96d1933bf0427f7b34fd02176bf92b18db239ed0795dbaebc90c64a32"
+    },
+    {
+     "name": "allength.exact_width",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/exact_width.py",
+     "sha256": "e561b3dbddbb4370183c3d4244e67836e65e7508f10d53ca3f2728c1a72e72e4"
+    },
+    {
+     "name": "allength.generic_word",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/generic_word.py",
+     "sha256": "4da3b96eb7372350ba7827daca872950560d88c51c64fcec12df23485acf7d1b"
+    },
+    {
+     "name": "allength.replay",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/replay.py",
+     "sha256": "eef8c645767b5d7b4f09900624b5370a6dd544cec94e2b8c961e8bf96a5eadc0"
+    },
+    {
+     "name": "allength.rounds",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/rounds.py",
+     "sha256": "fc9f9cf40fac4a1a76cde8cae09287bfbf8f8dbcd0138a65fd8cb3d8d5ec5ace"
+    },
+    {
+     "name": "allength.toeplitz_disp",
+     "path": "/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/toeplitz_disp.py",
+     "sha256": "a6970bce28515a0b3747814b2d2cc4566fb9a01db74ea3d5965a159d2248206c"
+    }
+   ]
+  },
+  "sources_unchanged_between_snapshots": true
+ },
+ "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+ "r": 1024,
+ "N": 8192,
+ "runs": [
+  {
+   "r": 1024,
+   "N": 8192,
+   "prime_index": 0,
+   "p": 2305843009213800449,
+   "omega": 2193592910218792717,
+   "vectors": "random(2), seed random.Random(1024).randrange(p)",
+   "n_vectors": 2,
+   "vectors_sha256": "6160a68505f6b4619e9ab7eea41e2f612b22f1f0301f722e27864fff7ac7b26f",
+   "strict_KEEP_ZERO_MULTIPLIERS": true,
+   "corrupted": false,
+   "bad_transpose": null,
+   "corrupt_forward_layer": null,
+   "entries_checked": 2048,
+   "mismatches": 0,
+   "layers_word": 4796928,
+   "layers_tword": 4796928,
+   "gates_word": {
+    "shears": 64638464,
+    "scales": 1024
+   },
+   "gates_tword": {
+    "shears": 64638464,
+    "scales": 1024
+   },
+   "gates_processed_total": 129278976,
+   "gate_applications_total": 258557952,
+   "sha256_word_stream": "8c1eaf79cb9fb29a0b89c3956b8557b772594cf6dad9543cd064cfd50983c3c1",
+   "sha256_tword_stream": "0539306f8bb2d7394766bf380f791c27e19882d4a8e91d8e579d6bc551d13a3e",
+   "polyhash_forward": "0x3b205f50545c6919012fb29486b4b9e2",
+   "polyhash_reverse": "0x3b205f50545c6919012fb29486b4b9e2",
+   "polyhash_transpose_input_emission_horner": "0x3b205f50545c6919012fb29486b4b9e2",
+   "transpose_input_layer_order": "reverse",
+   "transpose_swaps_shear_ends": true,
+   "reverse_equals_reversed_forward": true,
+   "pairs_built_both_passes": 131072,
+   "max_pair_dag_gates": 880,
+   "max_pair_replay_layers": 158,
+   "time_transpose_s": 107.7,
+   "time_forward_s": 106.0,
+   "time_total_s": 214.1,
+   "maxrss_mb_so_far": 37.7,
+   "outputs_sha256": "98873b18ee2ac7f3082b5d26770fd498c49d2a4286de03b40a704d75939e30b2"
+  },
+  {
+   "r": 1024,
+   "N": 8192,
+   "prime_index": 1,
+   "p": 2305843009213931521,
+   "omega": 982825151170178559,
+   "vectors": "random(2), seed random.Random(1024).randrange(p)",
+   "n_vectors": 2,
+   "vectors_sha256": "6160a68505f6b4619e9ab7eea41e2f612b22f1f0301f722e27864fff7ac7b26f",
+   "strict_KEEP_ZERO_MULTIPLIERS": true,
+   "corrupted": false,
+   "bad_transpose": null,
+   "corrupt_forward_layer": null,
+   "entries_checked": 2048,
+   "mismatches": 0,
+   "layers_word": 4796928,
+   "layers_tword": 4796928,
+   "gates_word": {
+    "shears": 64638464,
+    "scales": 1024
+   },
+   "gates_tword": {
+    "shears": 64638464,
+    "scales": 1024
+   },
+   "gates_processed_total": 129278976,
+   "gate_applications_total": 258557952,
+   "sha256_word_stream": "0637e85661f005b1e1c15c13c49252884c469299cbbc5032f952251fadaaab9d",
+   "sha256_tword_stream": "4d8ae9ce1b7029f9722d88b54f025f2f9ef8b7da49891bed74c7ff0ec5d44a44",
+   "polyhash_forward": "0x279d3da68ceb7605d5841cc34f025725",
+   "polyhash_reverse": "0x279d3da68ceb7605d5841cc34f025725",
+   "polyhash_transpose_input_emission_horner": "0x279d3da68ceb7605d5841cc34f025725",
+   "transpose_input_layer_order": "reverse",
+   "transpose_swaps_shear_ends": true,
+   "reverse_equals_reversed_forward": true,
+   "pairs_built_both_passes": 131072,
+   "max_pair_dag_gates": 880,
+   "max_pair_replay_layers": 158,
+   "time_transpose_s": 111.5,
+   "time_forward_s": 105.9,
+   "time_total_s": 217.8,
+   "maxrss_mb_so_far": 37.9,
+   "outputs_sha256": "ac53da7ea0e4dae207fca13cc699987a67ddb40121bfa9871ccf22c9eb861e90"
+  }
+ ],
+ "mismatches_total": 0,
+ "wall_s": 431.9,
+ "maxrss_mb": 37.9
+}

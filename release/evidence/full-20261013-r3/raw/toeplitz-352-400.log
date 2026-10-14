@@ -1,0 +1,1 @@
+toeplitz strict r=352 dps=400 vectors=3: max rel err=5.51e-377 min=4.6e-377 digits lost=23.7 log10 max|g|=28.3 layers=1015392 build=124s total=218s

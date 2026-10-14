@@ -1,0 +1,1 @@
+r=128 gates=928320 build=0.73s apply=0.13s peak_rss=0.12GB numpy_fft=1.2us numpy_dense_toeplitz=6.1us

@@ -1,0 +1,3 @@
+r=352: min|root|=0.825624 (next 0.893598, 0.922255); roots inside unit disk: 179 of 351; rel. residual at smallest roots <= 4.4e-15; predicted log10 max|g| ~ 29.2, observed 28.3; fitted slope 0.0832 vs log10(1/rho) 0.0832; digits lost 23.6
+r=640: min|root|=0.864668 (next 0.917060, 0.925225); roots inside unit disk: 314 of 639; rel. residual at smallest roots <= 1.4e-14; predicted log10 max|g| ~ 40.4, observed 39.4; fitted slope 0.0632 vs log10(1/rho) 0.0632; digits lost 35.0
+r=1024: min|root|=0.818498 (next 0.837408, 0.869760); roots inside unit disk: 508 of 1023; rel. residual at smallest roots <= 4.1e-15; predicted log10 max|g| ~ 89.0, observed 88.2; fitted slope 0.0870 vs log10(1/rho) 0.0870; digits lost 78.6

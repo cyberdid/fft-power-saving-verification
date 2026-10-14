@@ -1,0 +1,19 @@
+r=64 dps=60  (charges are log10 of running-peak growth, additive)
+total layers=50464  recursion levels (block widths v): [8, 16, 32, 64]
+
+stage T^T: log10(peak/input_inf) = 19.08
+  by recursion level v:
+    v=64    growth=    9.43  ( 49.4% of total)
+    v=32    growth=    6.25  ( 32.8% of total)
+    v=16    growth=    3.40  ( 17.8% of total)
+  by phase:
+    chunk   growth=   19.08  (100.0%)
+
+stage T: log10(peak/input_inf) = 9.17
+  by recursion level v:
+    v=32    growth=    0.98  ( 10.7% of total)
+    v=16    growth=    5.14  ( 56.0% of total)
+    v=8     growth=    3.05  ( 33.3% of total)
+  by phase:
+    chunk   growth=    6.12  ( 66.7%)
+    direct  growth=    3.05  ( 33.3%)

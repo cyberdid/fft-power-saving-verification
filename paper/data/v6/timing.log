@@ -1,0 +1,18 @@
+r=64 gates=64800 build=0.16s apply=0.01s peak_rss=0.04GB numpy_fft=1.1us numpy_dense_toeplitz=4.0us
+r=128 gates=928320 build=0.88s apply=0.16s peak_rss=0.12GB numpy_fft=1.5us numpy_dense_toeplitz=14.0us
+/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/rounds.py:107: RuntimeWarning: overflow encountered in scalar multiply
+  s[dst] = s[dst] + c * s[src]  # shear (src != dst)
+/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/rounds.py:107: RuntimeWarning: invalid value encountered in scalar multiply
+  s[dst] = s[dst] + c * s[src]  # shear (src != dst)
+/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/rounds.py:107: RuntimeWarning: invalid value encountered in scalar add
+  s[dst] = s[dst] + c * s[src]  # shear (src != dst)
+r=256 gates=5051520 build=4.27s apply=0.88s peak_rss=0.50GB numpy_fft=2.1us numpy_dense_toeplitz=57.1us
+/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/rounds.py:107: RuntimeWarning: overflow encountered in scalar multiply
+  s[dst] = s[dst] + c * s[src]  # shear (src != dst)
+/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/rounds.py:107: RuntimeWarning: invalid value encountered in scalar multiply
+  s[dst] = s[dst] + c * s[src]  # shear (src != dst)
+/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/rounds.py:107: RuntimeWarning: invalid value encountered in scalar add
+  s[dst] = s[dst] + c * s[src]  # shear (src != dst)
+/home/cyberdid/Projects/FFT-Synthetic-Lab/allength/rounds.py:107: RuntimeWarning: overflow encountered in scalar add
+  s[dst] = s[dst] + c * s[src]  # shear (src != dst)
+r=512 gates=19638528 build=15.01s apply=3.12s peak_rss=1.78GB numpy_fft=3.5us numpy_dense_toeplitz=222.4us

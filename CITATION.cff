@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this software, data or manuscript, please cite it as below."
+title: "An independent check of the local Fourier compiler in OpenAI's preprint 'An explicit power saving for the exact discrete Fourier transform'"
+type: software
+authors:
+  - family-names: Pylypenko
+    given-names: Oleksandr
+    orcid: "https://orcid.org/0009-0004-9610-9242"
+version: 1.0.0
+date-released: 2026-10-14
+license: Apache-2.0
+repository-code: "https://github.com/cyberdid/fft-power-saving-verification"
+keywords:
+  - discrete Fourier transform
+  - circuit complexity
+  - Toeplitz matrix
+  - numerical stability
+  - cyclotomic fields
+  - exact arithmetic
+  - Lean

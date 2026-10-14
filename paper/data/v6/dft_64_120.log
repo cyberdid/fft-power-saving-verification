@@ -1,0 +1,1 @@
+mp  r=64 dps=120 basis(64): max rel err=9.1e-91 median=1.46e-92 digits lost=30.0 log10 max|H|=5.4 log10 max|1/H|=3.6 layers=50464 build=1s total=26s

@@ -1,0 +1,37 @@
+
+worst rel err n=1..200: 1.605e-14
+....n=   97 rel err 9.124e-16
+n=  127 rel err 9.178e-16
+n=  256 rel err 6.228e-16
+n=  360 rel err 6.187e-15
+n=  997 rel err 9.529e-16
+n= 1000 rel err 1.262e-15
+n= 1024 rel err 7.558e-16
+n= 1536 rel err 9.434e-16
+n= 2310 rel err 2.317e-15
+n= 4096 rel err 8.336e-16
+.
+worst rel err n=2..120 with compiled kernels: 8.13e-08
+.............
+worst fan-out (including output reads): 2
+.
+depth / log2(2+v) worst over sizes: 2.589
+.
+gates / (v log2(2+v)) worst over sizes: 4.874
+............
+width r -> largest feasible chunk b (dense DAG, 2b+g <= r): [(8, 1), (16, 2), (32, 3), (64, 5), (128, 7), (256, 11)]
+....................................
+exact identity worst residual r=1..24: 1.67e-74
+...............
+layers / ((delta+1)(H+1)) worst over 150 DAGs: 2.000
+....
+shear count / (8g+2a) worst over 200 DAGs: 0.735
+....[2026-10-13T20:27:49.871610+00:00] first
+[2026-10-13T20:27:49.890910+00:00] second
+[2026-10-13T20:27:49.908592+00:00] second
+.[2026-10-13T20:27:49.927016+00:00] collect
+.........................
+----------------------------------------------------------------------
+Ran 117 tests in 18.918s
+
+OK

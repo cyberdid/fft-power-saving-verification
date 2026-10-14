@@ -1,0 +1,16 @@
+{
+  "r": 128,
+  "dps": 90,
+  "stage": "word",
+  "reference_dps": 240,
+  "phases": [
+    "chunk",
+    "direct"
+  ],
+  "baseline_lost": 50.56915486369187,
+  "high_precision_lost": {
+    "chunk": 22.62680712205542,
+    "direct": 51.00227814036133
+  },
+  "chunk_only_low_lost": 51.00227814036133
+}

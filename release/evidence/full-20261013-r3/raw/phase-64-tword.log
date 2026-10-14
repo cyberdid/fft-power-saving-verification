@@ -1,0 +1,5 @@
+r=64 dps=50 stage=tword phases=['chunk', 'direct'] reference=200
+  baseline (all phases at DPS):           digits lost =   17.8
+  chunk   high precision, rest at DPS: digits lost =    3.3 (removes  14.5 digits)
+  direct  high precision, rest at DPS: digits lost =   17.8 (removes   0.0 digits)
+  all high precision EXCEPT chunk:        digits lost =   17.8

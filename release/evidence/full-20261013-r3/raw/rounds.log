@@ -1,0 +1,6 @@
+r=16: max |by rounds - sequential| = 0.0
+r=32: max |by rounds - sequential| = 0.0
+r=48: max |by rounds - sequential| = 0.0
+r=64: max |by rounds - sequential| = 0.0
+r=256: layers=779392 rounds=518948 conflicts=0 layers/round=1.50
+r=512: layers=2074880 rounds=1035044 conflicts=0 layers/round=2.00

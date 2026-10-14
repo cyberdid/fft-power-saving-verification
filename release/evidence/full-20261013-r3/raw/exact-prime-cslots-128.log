@@ -1,0 +1,1 @@
+exact r=128 F_p p=2305843009213704193 (p = 1 mod 1024) C-slots+conj-DAG random(2): entries checked=256 mismatches=0 layers=197184 build=3s total=107s

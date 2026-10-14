@@ -1,0 +1,1 @@
+exact r=32 F_p p=2305843009213704193 (p = 1 mod 256) C-slots+conj-DAG basis(32): entries checked=1024 mismatches=0 layers=10896 build=0s total=50s
