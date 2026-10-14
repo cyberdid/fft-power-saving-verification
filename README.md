@@ -6,8 +6,9 @@ preprint *"An explicit power saving for the exact discrete Fourier transform"*
 `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`).
 
 Author: Oleksandr Pylypenko (ORCID [0009-0004-9610-9242](https://orcid.org/0009-0004-9610-9242); op1@cyberunit.tech, limblucifer666@gmail.com). Validated numerical results: v6.3 (2026-10-14).
-The English LaTeX manuscript is a working draft; the Ukrainian typeset version
-is still in preparation.
+The English and Ukrainian LaTeX manuscripts are working drafts. Full manuscript
+content and typesetting QA remain in progress; this release archives the software
+and reproducibility data.
 
 The preprint claims an exact DFT of every length n in time
 O(n (log n)^θ (log log n)^{4−θ}) with θ = 1 − 2.1·10⁻¹³ in an exact
@@ -70,7 +71,7 @@ The validation reference (section 3.2) keeps four kinds of evidence apart:
 | `tests/` | 123 unit tests |
 | `exact.py`, `numerical.py`, `signals.py`, `precision_control.py` | Early-stage helper modules still used by the test suite |
 | `data/` | Gate-count tables (pickles) |
-| `paper/article-en.pdf`, `paper/tex/en/main.tex` | Current English manuscript draft |
+| `paper/article-en.pdf`, `paper/article-uk.pdf`, `paper/tex/` | English and Ukrainian manuscript drafts |
 | `paper/article-ua.txt` | Ukrainian validation reference; fixed numerical table claims |
 | `paper/tex/` | LaTeX sources, bibliography and generated table bodies |
 | `paper/scripts/` | Experiments, aggregation (`collect_v6.py`), table validator (`verify_tables.py`), figures |
@@ -138,12 +139,14 @@ byte-for-byte; absolute paths inside them are those of the original machine. See
 - `paper/article-ua.txt` is the Ukrainian validation reference used by the
   table validator and the LaTeX table generator. It retains technical history
   and is not the final Ukrainian typeset article.
-- Ukrainian LaTeX/PDF is planned. See [`paper/README.md`](paper/README.md).
+- [Ukrainian manuscript draft](paper/article-uk.pdf), with source in
+  `paper/tex/uk/main.tex`. See [`paper/README.md`](paper/README.md).
 
-To build the English draft, install Tectonic and run:
+To build either draft, install Tectonic and run:
 
 ```bash
 TECTONIC=/path/to/tectonic bash paper/tex/build.sh en
+TECTONIC=/path/to/tectonic bash paper/tex/build.sh uk
 ```
 
 ## Scope and limits
