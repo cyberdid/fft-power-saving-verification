@@ -5,6 +5,14 @@ our own implementation, experiments or text. None of them revealed an error in
 the preprint. The authoritative account is section 1.5 of
 [`paper/article-ua.txt`](paper/article-ua.txt).
 
+## Documentation update — 2026-10-14
+
+- Link the separately published English preprint (version 1.0,
+  DOI 10.5281/zenodo.23375871) and distinguish it from the software/data DOI.
+- Add the preprint as the preferred citation, clarify publication status and
+  licenses, and correct the reproduction instructions about included PDFs.
+- Preserve the immutable software release v1.0.0 and all numerical evidence.
+
 ## 1.0.0 — 2026-10-14 (public release of manuscript v6.3)
 
 - First public release: library `allength/`, 123 unit tests, experiment and

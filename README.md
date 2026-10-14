@@ -5,16 +5,19 @@ preprint *"An explicit power saving for the exact discrete Fourier transform"*
 (github.com/openai/math, preprint directory commit `301488868`, repository HEAD
 `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`).
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23375601.svg)](https://doi.org/10.5281/zenodo.23375601)
+[![Software DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23375601.svg)](https://doi.org/10.5281/zenodo.23375601)
+[![Preprint DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23375871.svg)](https://doi.org/10.5281/zenodo.23375871)
 
 Archived software and data release **v1.0.0**:
 [10.5281/zenodo.23375601](https://doi.org/10.5281/zenodo.23375601).
-This DOI identifies the computational package; manuscript drafts remain in preparation.
+English preprint **version 1.0** (2026-10-14):
+[10.5281/zenodo.23375871](https://doi.org/10.5281/zenodo.23375871).
+The two DOIs identify the software/data package and the article separately.
 
 Author: Oleksandr Pylypenko (ORCID [0009-0004-9610-9242](https://orcid.org/0009-0004-9610-9242); op1@cyberunit.tech, limblucifer666@gmail.com). Validated numerical results: v6.3 (2026-10-14).
-The English and Ukrainian LaTeX manuscripts are working drafts. Full manuscript
-content and typesetting QA remain in progress; this release archives the software
-and reproducibility data.
+The English article is published as a preprint on Zenodo; its local PDF matches
+the published file. Preprint publication does not imply peer review. The
+Ukrainian LaTeX edition remains a parallel working draft.
 
 The preprint claims an exact DFT of every length n in time
 O(n (log n)^θ (log log n)^{4−θ}) with θ = 1 − 2.1·10⁻¹³ in an exact
@@ -77,7 +80,7 @@ The validation reference (section 3.2) keeps four kinds of evidence apart:
 | `tests/` | 123 unit tests |
 | `exact.py`, `numerical.py`, `signals.py`, `precision_control.py` | Early-stage helper modules still used by the test suite |
 | `data/` | Gate-count tables (pickles) |
-| `paper/article-en.pdf`, `paper/article-uk.pdf`, `paper/tex/` | English and Ukrainian manuscript drafts |
+| `paper/article-en.pdf`, `paper/article-uk.pdf`, `paper/tex/` | Published English preprint and Ukrainian manuscript draft |
 | `paper/article-ua.txt` | Ukrainian validation reference; fixed numerical table claims |
 | `paper/tex/` | LaTeX sources, bibliography and generated table bodies |
 | `paper/scripts/` | Experiments, aggregation (`collect_v6.py`), table validator (`verify_tables.py`), figures |
@@ -139,16 +142,16 @@ byte-for-byte; absolute paths inside them are those of the original machine. See
 
 ## Paper
 
-- [English manuscript draft](paper/article-en.pdf), with LaTeX source in
-  `paper/tex/en/main.tex`. The numerical data are validated; the full English
-  translation and typesetting are still undergoing publication preparation.
+- [English preprint, version 1.0](https://doi.org/10.5281/zenodo.23375871),
+  with the identical [local PDF](paper/article-en.pdf) and LaTeX source in
+  `paper/tex/en/main.tex`. Published on Zenodo on 2026-10-14 under CC BY 4.0.
 - `paper/article-ua.txt` is the Ukrainian validation reference used by the
   table validator and the LaTeX table generator. It retains technical history
   and is not the final Ukrainian typeset article.
 - [Ukrainian manuscript draft](paper/article-uk.pdf), with source in
   `paper/tex/uk/main.tex`. See [`paper/README.md`](paper/README.md).
 
-To build either draft, install Tectonic and run:
+To build either edition, install Tectonic and run:
 
 ```bash
 TECTONIC=/path/to/tectonic bash paper/tex/build.sh en
@@ -165,13 +168,26 @@ mechanical check; it is not an independent proof.
 
 ## License
 
-Apache License 2.0 — see [`LICENSE`](LICENSE) and [`NOTICE`](NOTICE). The
+The software and reproducibility package use Apache License 2.0 — see
+[`LICENSE`](LICENSE) and [`NOTICE`](NOTICE). The English preprint is also
+published separately under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+on [Zenodo](https://zenodo.org/records/23375871). OpenAI's
 preprint and its Lean formalization are not included; they belong to their
 authors and are referenced only by repository, commit and hashes.
 
 ## How to cite
 
-See [`CITATION.cff`](CITATION.cff):
+For the study, cite the preprint:
+
+> Pylypenko, O. (2026). *An independent check of the local Fourier compiler in
+> OpenAI's preprint "An explicit power saving for the exact discrete Fourier
+> transform": exact and numerical tests, depth, cost, and limits* (Version 1.0)
+> [Preprint]. Zenodo. https://doi.org/10.5281/zenodo.23375871
+
+For the software or data, cite the archived package:
+
+See [`CITATION.cff`](CITATION.cff), which includes the software metadata and
+the preprint as the preferred citation:
 
 > Pylypenko, O. (2026). *An independent check of the local Fourier compiler in
 > OpenAI's preprint "An explicit power saving for the exact discrete Fourier
@@ -189,4 +205,7 @@ Q(ζ_N) для r = 4–32; у F_p — необхідна умова для бі�
 що дає показник θ, не реалізовано, тому головну теорему ця робота не підтверджує
 і не спростовує. Рукопис — `paper/article-ua.txt` (v6.3); відтворення —
 `release/README_REPRODUCE.md`; таблиці звіряє `paper/scripts/verify_tables.py`;
-завершений прогін — `release/evidence/full-20261013-r3/`. Ліцензія Apache 2.0.
+завершений прогін — `release/evidence/full-20261013-r3/`. Англомовний препринт
+опубліковано: [DOI 10.5281/zenodo.23375871](https://doi.org/10.5281/zenodo.23375871)
+(CC BY 4.0); код і дані: [DOI 10.5281/zenodo.23375601](https://doi.org/10.5281/zenodo.23375601)
+(Apache 2.0). Українська LaTeX-версія залишається робочою чернеткою.

@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this software or data, please cite this archived version."
+message: "Please cite the preprint for the study and this archived software version for code or data."
 title: "An independent check of the local Fourier compiler in OpenAI's preprint 'An explicit power saving for the exact discrete Fourier transform'"
 type: software
 authors:
@@ -20,3 +20,17 @@ keywords:
   - cyclotomic fields
   - exact arithmetic
   - Lean
+preferred-citation:
+  type: article
+  authors:
+    - family-names: Pylypenko
+      given-names: Oleksandr
+      orcid: "https://orcid.org/0009-0004-9610-9242"
+  title: "An independent check of the local Fourier compiler in OpenAI's preprint \"An explicit power saving for the exact discrete Fourier transform\": exact and numerical tests, depth, cost, and limits"
+  doi: "10.5281/zenodo.23375871"
+  url: "https://zenodo.org/records/23375871"
+  year: 2026
+  month: 10
+  day: 14
+  version: "1.0"
+  notes: "Preprint; published under CC BY 4.0."
