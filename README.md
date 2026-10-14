@@ -5,7 +5,7 @@ preprint *"An explicit power saving for the exact discrete Fourier transform"*
 (github.com/openai/math, preprint directory commit `301488868`, repository HEAD
 `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`).
 
-Author: Oleksandr Pylypenko (ORCID [0009-0004-9610-9242](https://orcid.org/0009-0004-9610-9242)). Validated numerical results: v6.3 (2026-10-14).
+Author: Oleksandr Pylypenko (ORCID [0009-0004-9610-9242](https://orcid.org/0009-0004-9610-9242); op1@cyberunit.tech, limblucifer666@gmail.com). Validated numerical results: v6.3 (2026-10-14).
 The English LaTeX manuscript is a working draft; the Ukrainian typeset version
 is still in preparation.
 

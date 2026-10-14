@@ -6,6 +6,7 @@ authors:
   - family-names: Pylypenko
     given-names: Oleksandr
     orcid: "https://orcid.org/0009-0004-9610-9242"
+    email: op1@cyberunit.tech
 version: 1.0.0
 date-released: 2026-10-14
 license: Apache-2.0

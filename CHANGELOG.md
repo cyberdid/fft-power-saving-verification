@@ -11,6 +11,9 @@ the preprint. The authoritative account is section 1.5 of
   validation scripts `paper/scripts/`, raw logs and aggregated data
   `paper/data/`, the reproduction package `release/`, and the frozen evidence of
   the completed core run `release/evidence/full-20261013-r3/` (135/135 steps).
+- The paper in LaTeX: English primary edition `paper/article-en.pdf` and the
+  parallel Ukrainian edition `paper/article-uk.pdf`; tables are generated from
+  the validated manuscript by `paper/tex/gen_tables.py`.
 - Licensed under Apache License 2.0.
 
 ## v6.3 — 2026-10-14
