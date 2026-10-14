@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this software, data or manuscript, please cite it as below."
+message: "If you use this software or data, please cite this archived version."
 title: "An independent check of the local Fourier compiler in OpenAI's preprint 'An explicit power saving for the exact discrete Fourier transform'"
 type: software
 authors:
@@ -8,6 +8,7 @@ authors:
     orcid: "https://orcid.org/0009-0004-9610-9242"
     email: op1@cyberunit.tech
 version: 1.0.0
+doi: "10.5281/zenodo.23375601"
 date-released: 2026-10-14
 license: Apache-2.0
 repository-code: "https://github.com/cyberdid/fft-power-saving-verification"

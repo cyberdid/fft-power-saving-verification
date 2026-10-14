@@ -5,6 +5,12 @@ preprint *"An explicit power saving for the exact discrete Fourier transform"*
 (github.com/openai/math, preprint directory commit `301488868`, repository HEAD
 `fd4aeeb2ee4fc729c18d98444fed42fd0529eeeb`).
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23375601.svg)](https://doi.org/10.5281/zenodo.23375601)
+
+Archived software and data release **v1.0.0**:
+[10.5281/zenodo.23375601](https://doi.org/10.5281/zenodo.23375601).
+This DOI identifies the computational package; manuscript drafts remain in preparation.
+
 Author: Oleksandr Pylypenko (ORCID [0009-0004-9610-9242](https://orcid.org/0009-0004-9610-9242); op1@cyberunit.tech, limblucifer666@gmail.com). Validated numerical results: v6.3 (2026-10-14).
 The English and Ukrainian LaTeX manuscripts are working drafts. Full manuscript
 content and typesetting QA remain in progress; this release archives the software
@@ -170,7 +176,7 @@ See [`CITATION.cff`](CITATION.cff):
 > Pylypenko, O. (2026). *An independent check of the local Fourier compiler in
 > OpenAI's preprint "An explicit power saving for the exact discrete Fourier
 > transform"* (Version 1.0.0) [Computer software].
-> https://github.com/cyberdid/fft-power-saving-verification
+> https://doi.org/10.5281/zenodo.23375601
 
 ## Коротко українською
 
